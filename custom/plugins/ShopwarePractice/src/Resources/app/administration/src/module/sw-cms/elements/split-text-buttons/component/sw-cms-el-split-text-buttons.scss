@@ -1,0 +1,37 @@
+.sw-cms-el-split-text-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px;
+    padding: 48px 32px;
+    &__column {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+    h2 {
+        color: inherit;
+        font-size: 32px;
+        line-height: 1.2;
+        white-space: pre-line;
+        margin-bottom: 20px;
+    }
+    p {
+        color: inherit;
+        white-space: pre-line;
+        line-height: 1.6;
+    }
+    &__subheadline {
+        font-weight: 600;
+    }
+    &__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 24px;
+        span {
+            padding: 12px 18px;
+            background: #fff;
+            color: #2d4266;
+            border-radius: 4px;
+        }
+    }
+}

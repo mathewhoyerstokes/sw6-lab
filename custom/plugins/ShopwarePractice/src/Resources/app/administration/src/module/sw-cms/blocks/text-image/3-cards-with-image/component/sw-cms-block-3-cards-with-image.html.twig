@@ -1,0 +1,8 @@
+{% block sw_cms_block_three_cards_with_image %}
+    <div class="sw-cms-block-3-cards-with-image">
+        <div v-for="index in 3" :key="index" class="sw-cms-block-3-cards-with-image__card">
+            <slot :name="'image-' + index"></slot>
+            <slot :name="'card-' + index"></slot>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% block cms_block_promo_switcher_text_image_hero %}
+    {% set columns = 2 %}
+    {% set content = block.slots.getSlot('content') %}
+    {% set imageOnRight = content.translated.config.imageOnRight.value|default(false) %}
+    {# Change the DOM order too, so mobile and keyboard navigation match the selected layout. #}
+    {% set orderedSlots = imageOnRight ? ['content', 'image'] : ['image', 'content'] %}
+
+    {% for slotName in orderedSlots %}
+        {% set element = block.slots.getSlot(slotName) %}
+        {% if element %}
+            <div class="col-12 col-md-6{% if slotName == 'content' %} d-flex align-items-center{% endif %}"
+                 data-cms-element-id="{{ element.id }}">
+                {% sw_include '@Storefront/storefront/element/cms-element-' ~ element.type ~ '.html.twig' with {
+                    element: element
+                } %}
+            </div>
+        {% endif %}
+    {% endfor %}
+{% endblock %}

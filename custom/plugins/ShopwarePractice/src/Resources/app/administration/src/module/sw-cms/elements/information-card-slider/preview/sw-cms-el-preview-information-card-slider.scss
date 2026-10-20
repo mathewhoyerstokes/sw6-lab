@@ -1,0 +1,20 @@
+.sw-cms-el-preview-information-card-slider {
+    padding: 12px;
+    text-align: center;
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+        margin-block: 12px;
+    }
+    &__cards > div {
+        border: 1px solid #d1d9e0;
+        padding: 4px;
+    }
+    &__image {
+        display: block;
+        background: #d1d9e0;
+        aspect-ratio: 16 / 9;
+        margin-bottom: 8px;
+    }
+}

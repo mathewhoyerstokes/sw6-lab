@@ -1,0 +1,22 @@
+.sw-cms-el-promo-text-image-hero {
+    padding: 24px;
+    overflow-wrap: anywhere;
+    h3 {
+        margin: 0 0 16px;
+    }
+    p {
+        margin: 0 0 24px;
+        white-space: pre-line;
+    }
+    &__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    &__buttons span {
+        padding: 10px 16px;
+        border-radius: 4px;
+        background: #189eff;
+        color: #fff;
+    }
+}

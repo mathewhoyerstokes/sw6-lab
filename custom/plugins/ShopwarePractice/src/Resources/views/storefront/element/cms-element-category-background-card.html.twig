@@ -1,0 +1,15 @@
+{% block element_category_background_card %}
+    {% set category = element.data.category %}
+    {% if category and element.data.url %}
+        <div class="cms-element-category-background-card"
+             {% if category.media %}style="background-image: url('{{ category.media.url|escape('css') }}');"{% endif %}>
+            {% block element_category_background_card_button %}
+                <a class="btn btn-primary" href="{{ element.data.url }}"
+                   aria-label="{{ 'shopwareDesignSystem.categoryBackgroundCard.seeMore'|trans }}: {{ category.translated.name }}"
+                   {% if category.shouldOpenInNewTab %}target="_blank" rel="noopener noreferrer"{% endif %}>
+                    {{ 'shopwareDesignSystem.categoryBackgroundCard.seeMore'|trans }}
+                </a>
+            {% endblock %}
+        </div>
+    {% endif %}
+{% endblock %}

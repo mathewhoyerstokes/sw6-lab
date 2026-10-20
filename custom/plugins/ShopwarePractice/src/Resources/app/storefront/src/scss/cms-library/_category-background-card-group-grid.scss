@@ -1,0 +1,26 @@
+// Adapt this block to the new design here. Shopware supplies Bootstrap utilities and mixins.
+.cms-block-category-background-card-group-grid {
+    .cms-block-container-row {
+        row-gap: 24px;
+    }
+}
+.cms-block-category-background-card-group-grid .cms-element-category-background-card {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 280px;
+    padding: 24px;
+    border-radius: 8px;
+    background: #343a40 center / cover no-repeat;
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        border-radius: inherit;
+        background: rgba(0, 0, 0, 0.25);
+    }
+}

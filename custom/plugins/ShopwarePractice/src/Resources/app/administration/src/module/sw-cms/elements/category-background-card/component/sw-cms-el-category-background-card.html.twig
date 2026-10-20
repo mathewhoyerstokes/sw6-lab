@@ -1,0 +1,6 @@
+{% block sw_cms_el_category_background_card %}
+    <div class="sw-cms-el-category-background-card" :style="cardStyle" :aria-busy="isLoading">
+        <span v-if="!category" class="sw-cms-el-category-background-card__placeholder">{{ categoryName }}</span>
+        <span class="sw-cms-el-category-background-card__button">{{ $t('vierpunkt-theme.cms.categoryBackgroundCard.seeMore') }}</span>
+    </div>
+{% endblock %}

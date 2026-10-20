@@ -1,0 +1,22 @@
+{
+  "vierpunkt-theme": {
+    "cms": {
+      "informationCardSlider": {
+        "label": "Infokarten-Slider",
+        "help": "Bis zu sechs Infokarten bearbeiten. Jede Karte hat ein Bild, eine H3-Überschrift, einen Absatz und zwei optionale Links. Karten ohne Bild werden ausgeblendet. Zum Speichern das Layout sichern.",
+        "slide": "Karte",
+        "image": "Kartenbild",
+        "headline": "Überschrift (H3)",
+        "buttonText": "Primärer Buttontext",
+        "buttonUrl": "Primäre Button-URL",
+        "secondaryButtonText": "Sekundärer Buttontext",
+        "secondaryButtonUrl": "Sekundäre Button-URL",
+        "up": "Nach oben",
+        "down": "Nach unten",
+        "remove": "Folie entfernen",
+        "add": "Karte hinzufügen",
+        "text": "Absatztext"
+      }
+    }
+  }
+}

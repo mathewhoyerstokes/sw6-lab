@@ -1,0 +1,6 @@
+.sw-cms-preview-three-image-panels {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0;
+  > div { padding: 16px 8px; min-height: 140px; background: linear-gradient(130deg, #607983, #283b45); color: white; }
+  > div:nth-child(2) { background: linear-gradient(130deg, #9a8266, #4f4336); }
+  p { font-size: 10px; } span { display: block; width: 70%; height: 14px; background: #189eff; }
+}

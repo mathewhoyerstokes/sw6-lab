@@ -1,0 +1,34 @@
+{% block sw_cms_el_config_promo_text_image_hero %}
+    <div class="sw-cms-el-config-promo-text-image-hero">
+        <sw-text-field
+                v-model:value="element.config.headline.value"
+                :label="$t('vierpunkt-theme.cms.promoTextImageHero.headline')"
+                @update:value="onElementUpdate"
+        />
+        <sw-textarea-field
+                v-model:value="element.config.text.value"
+                :label="$t('vierpunkt-theme.cms.promoTextImageHero.text')"
+                @update:value="onElementUpdate"
+        />
+        <sw-text-field
+                v-model:value="element.config.buttonText.value"
+                :label="$t('vierpunkt-theme.cms.promoTextImageHero.buttonText')"
+                @update:value="onElementUpdate"
+        />
+        <sw-text-field
+                v-model:value="element.config.buttonUrl.value"
+                :label="$t('vierpunkt-theme.cms.promoTextImageHero.buttonUrl')"
+                @update:value="onElementUpdate"
+        />
+        <sw-text-field
+                v-model:value="element.config.buttonTwoText.value"
+                    :label="$t('vierpunkt-theme.cms.promoTextImageHero.buttonTwoText')"
+                @update:value="onElementUpdate"
+        />
+        <sw-text-field
+                v-model:value="element.config.buttonTwoUrl.value"
+                :label="$t('vierpunkt-theme.cms.promoTextImageHero.buttonTwoUrl')"
+                @update:value="onElementUpdate"
+        />
+    </div>
+{% endblock %}

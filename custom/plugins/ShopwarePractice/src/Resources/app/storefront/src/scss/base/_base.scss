@@ -1,1 +1,40 @@
 /* Element defaults that should apply across the storefront. */
+
+
+// Adapt this block to the new design here. Shopware supplies Bootstrap utilities and mixins.
+.cms-block-four-cards-stacked {
+  .cms-block-container-row { row-gap: 24px; }
+}
+
+.cms-block-four-cards-stacked .cms-element-content-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+
+  h4 { margin-bottom: 16px; }
+  p { margin-bottom: 24px; white-space: pre-line; }
+  .btn { align-self: flex-start; margin-top: auto; }
+}
+
+
+// Adapt this block to the new design here. Shopware supplies Bootstrap utilities and mixins.
+.cms-block-promo-image-text-hero {
+  .cms-block-container-row { row-gap: 24px; }
+}
+
+.cms-block-promo-image-text-hero .cms-element-promo-image-text-hero {
+  width: 100%;
+  padding: 24px;
+  text-align: start;
+  overflow-wrap: anywhere;
+
+  h3 { margin-bottom: 16px; }
+  p { margin-bottom: 24px; white-space: pre-line; }
+  &__buttons { display: flex; flex-wrap: wrap; gap: 12px; }
+
+  @include media-breakpoint-up(md) {
+    padding: 40px;
+  }
+}

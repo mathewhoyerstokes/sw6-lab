@@ -1,0 +1,18 @@
+{
+  "vierpunkt-theme": {
+    "cms": {
+      "iconAccordion": {
+        "label": "Icon accordion",
+        "help": "Add up to six items. Items without a title are hidden in the storefront. Save the layout to keep your changes.",
+        "item": "Item",
+        "icon": "Icon image (SVG, max. 40 × 40px)",
+        "title": "Title",
+        "text": "Paragraph text",
+        "up": "Move up",
+        "down": "Move down",
+        "remove": "Remove item",
+        "add": "Add item"
+      }
+    }
+  }
+}

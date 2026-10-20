@@ -1,0 +1,14 @@
+{% block sw_cms_block_designer_product_slider %}
+    <div class="sw-cms-block-designer-product-slider">
+        {# One heading element provides two plain text inputs; the product slider keeps its own settings. #}
+        <div class="sw-cms-block-designer-product-slider__title">
+            <slot name="sliderTitle"></slot>
+        </div>
+        <div v-if="hasLegacyDescription" class="sw-cms-block-designer-product-slider__description">
+            <slot name="sliderDescription"></slot>
+        </div>
+        <div class="sw-cms-block-designer-product-slider__products">
+            <slot name="sliderProducts"></slot>
+        </div>
+    </div>
+{% endblock %}

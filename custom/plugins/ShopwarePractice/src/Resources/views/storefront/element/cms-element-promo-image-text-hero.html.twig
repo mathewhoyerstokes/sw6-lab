@@ -1,0 +1,28 @@
+{% block element_promo_image_text_hero %}
+{% set config = element.translated.config %}
+
+<div class="cms-element-promo-image-text-hero pl-5">
+    {% if config.headline.value %}
+        <h3>{{ config.headline.value }}</h3>
+    {% endif %}
+
+    {% if config.text.value %}
+        <p>{{ config.text.value }}</p>
+    {% endif %}
+
+    {% if (config.buttonText.value and config.buttonUrl.value) or (config.buttonTwoText.value and config.buttonTwoUrl.value) %}
+        <div class="cms-element-promo-image-text-hero__buttons">
+            {% if config.buttonText.value and config.buttonUrl.value %}
+                <a class="btn btn-primary" href="{{ config.buttonUrl.value }}">
+                    {{ config.buttonText.value }}
+                </a>
+            {% endif %}
+            {% if config.buttonTwoText.value and config.buttonTwoUrl.value %}
+                <a class="btn btn-primary" href="{{ config.buttonTwoUrl.value }}">
+                    {{ config.buttonTwoText.value }}
+                </a>
+            {% endif %}
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

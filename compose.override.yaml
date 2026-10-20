@@ -6,20 +6,35 @@ services:
 ###< shopware/core ###
 
   web:
+    ports: !override
+      - "8002:8002"
+      - "8081:8080"
+      - "10099:10099"
+      - "10098:10098"
+      - "5174:5173"
+      - "5774:5773"
     environment:
-      APP_ENV: prod
-      APP_DEBUG: "0"
+      APP_ENV: dev
+      APP_URL: http://127.0.0.1:8002
+      APP_DEBUG: "1"
       PHP_MEMORY_LIMIT: 2G
       SHOPWARE_HTTP_CACHE_ENABLED: "0"
+      WATCHPACK_POLLING: "1000"
+      CHOKIDAR_USEPOLLING: "true"
+    volumes:
+      - ./docker/Caddyfile:/etc/caddy/Caddyfile:ro
+
+  adminer:
+    ports: !override
+      - "9081:8080"
 
 ###> symfony/mailer ###
   mailer:
     image: axllent/mailpit
     ports:
-      - "1025:1025"
-      - "8025:8025"
+      - "1026:1025"
+      - "8026:8025"
     environment:
       MP_SMTP_AUTH_ACCEPT_ANY: 1
       MP_SMTP_AUTH_ALLOW_INSECURE: 1
 ###< symfony/mailer ###
-

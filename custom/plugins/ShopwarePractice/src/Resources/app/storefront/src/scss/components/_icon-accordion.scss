@@ -1,0 +1,27 @@
+// Bootstrap provides the accordion layout, chevron and collapse animation.
+.cms-element-icon-accordion {
+    .accordion-button {
+        gap: 16px;
+    }
+
+    // Keep uploaded SVGs proportional within a 40px box.
+    .cms-accordion-icon {
+        width: 40px;
+        height: 40px;
+        max-width: 40px;
+        max-height: 40px;
+        object-fit: contain;
+        flex: 0 0 40px;
+    }
+
+    .cms-accordion-title {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .accordion-body p {
+        margin: 0;
+        white-space: pre-line;
+        overflow-wrap: anywhere;
+    }
+}

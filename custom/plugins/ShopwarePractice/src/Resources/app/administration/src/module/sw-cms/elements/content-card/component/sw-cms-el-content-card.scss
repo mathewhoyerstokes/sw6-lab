@@ -1,0 +1,30 @@
+.sw-cms-el-content-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 24px;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+
+
+   &__image {
+   display: block;
+   width: 100%;
+   aspect-ratio: 16 / 9;
+   object-fit: cover;
+   margin-bottom: 16px;
+  border-radius: 4px;
+   }
+
+  h4 { margin: 0 0 16px; }
+  p { margin: 0 0 24px; white-space: pre-line; }
+
+  &__button {
+    align-self: flex-start;
+    margin-top: auto;
+    padding: 10px 16px;
+    border-radius: 4px;
+    background: #189eff;
+    color: #fff;
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "vierpunkt-theme": {
+    "cms": {
+      "splitTextButtons": {
+        "label": "Text und Buttons in zwei Spalten",
+        "backgroundHelp": "Die Hintergrundfarbe gilt für dieses Element. Für den Abschnittshintergrund diese Farbe leeren und die Abschnittseinstellungen verwenden.",
+        "backgroundColor": "Hintergrundfarbe",
+        "textColor": "Textfarbe",
+        "headlineOnRight": "Überschrift rechts anzeigen",
+        "headline": "Überschrift (H2)",
+        "subheadline": "Unterüberschrift (optional)",
+        "text": "Absatztext",
+        "buttonText": "Erster Buttontext",
+        "buttonUrl": "Erste Button-URL",
+        "buttonTwoText": "Zweiter Buttontext",
+        "buttonTwoUrl": "Zweite Button-URL"
+      }
+    }
+  }
+}

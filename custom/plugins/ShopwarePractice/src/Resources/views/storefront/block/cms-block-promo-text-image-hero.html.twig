@@ -1,0 +1,22 @@
+{% block cms_block_promo_text_image_hero %}
+    {% set columns = 2 %}
+    {% set image = block.slots.getSlot('image') %}
+    {% set content = block.slots.getSlot('content') %}
+
+    {% if content %}
+        <div class="col-12 col-md-6 d-flex align-items-center" data-cms-element-id="{{ content.id }}">
+            {% sw_include '@Storefront/storefront/element/cms-element-' ~ content.type ~ '.html.twig' with {
+                element: content
+            } %}
+        </div>
+    {% endif %}
+
+    {% if image %}
+        <div class="col-12 col-md-6" data-cms-element-id="{{ image.id }}">
+            {% sw_include '@Storefront/storefront/element/cms-element-' ~ image.type ~ '.html.twig' with {
+                element: image
+            } %}
+        </div>
+    {% endif %}
+
+{% endblock %}

@@ -1,0 +1,12 @@
+{% block sw_cms_preview_four_cards %}
+    <div class="sw-cms-preview-four-cards">
+        <div v-for="index in 4" :key="index" class="sw-cms-preview-four-cards__card">
+            {# Optional top-image placeholder.
+            <span class="sw-cms-preview-four-cards__image"></span>
+            #}
+            <strong>{{ $t('vierpunkt-theme.cms.contentCard.headline') }}</strong>
+            <span class="sw-cms-preview-four-cards__text"></span>
+            <span class="sw-cms-preview-four-cards__button"></span>
+        </div>
+    </div>
+{% endblock %}

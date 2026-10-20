@@ -1,0 +1,21 @@
+.sw-cms-preview-category-background-card-group-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px;
+    padding: 12px;
+    text-align: center;
+    div {
+        display: grid;
+        place-items: center;
+        min-height: 72px;
+        padding: 4px;
+        border-radius: 4px;
+        background: linear-gradient(135deg, #697f87, #343a40);
+    }
+    strong {
+        padding: 4px;
+        background: #189eff;
+        color: #fff;
+        font-size: 10px;
+    }
+}

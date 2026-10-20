@@ -1,0 +1,22 @@
+{
+  "vierpunkt-theme": {
+    "cms": {
+      "blocks": {
+        "promoSwitcherTextImageHero": {
+          "label": "Promo-Hero mit wechselnder Bildposition"
+        }
+      },
+      "promoSwitcherTextImageHero": {
+        "label": "Promo-Hero mit wechselnder Bildposition",
+        "headline": "Überschrift",
+        "text": "Text",
+        "buttonText": "Button-Text",
+        "buttonUrl": "Button-Link",
+        "buttonTwoText": "Zweiter Button-Text",
+        "buttonTwoUrl": "Zweiter Button-Link",
+        "imageOnRight": "Bild rechts",
+        "imageOnRightHelp": "Aktivieren für Text links und Bild rechts. Auf Mobilgeräten bleibt diese Reihenfolge erhalten."
+      }
+    }
+  }
+}

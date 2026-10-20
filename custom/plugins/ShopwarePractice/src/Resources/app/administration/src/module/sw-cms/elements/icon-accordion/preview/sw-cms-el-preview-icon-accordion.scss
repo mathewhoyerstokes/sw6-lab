@@ -1,0 +1,20 @@
+.sw-cms-el-preview-icon-accordion {
+    padding: 12px;
+    > div {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 14px;
+        border: 1px solid #d1d9e0;
+        font-size: 12px;
+    }
+    &__image {
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+        background: #d1d9e0;
+    }
+    > div + div {
+        border-top: 0;
+    }
+}

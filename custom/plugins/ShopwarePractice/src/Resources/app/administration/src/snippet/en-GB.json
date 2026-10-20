@@ -1,0 +1,36 @@
+{
+  "vierpunkt-theme": {
+    "cms": {
+      "blocks": {
+        "fourCardsStacked": {
+          "label": "Four cards (2 × 2)"
+        },
+        "promoImageTextHero": {
+          "label": "Promo image and text"
+        },
+        "heroNewsletter": {
+          "label": "Newsletter"
+        }
+      },
+      "contentCard": {
+        "label": "Content card",
+        "backgroundColor": "Background colour",
+        "headline": "Heading",
+        "text": "Text",
+        "buttonText": "Button label",
+        "buttonUrl": "Button link",
+        "imageUrl": "Image URL",
+        "imageAlt": "Image alternative text"
+      },
+      "promoImageTextHero": {
+        "label": "Promo image and text",
+        "headline": "Headline",
+        "text": "Text",
+        "buttonText": "Button text",
+        "buttonUrl": "Button link",
+        "buttonTwoText": "Second button text",
+        "buttonTwoUrl": "Second button link"
+      }
+    }
+  }
+}

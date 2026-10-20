@@ -1,0 +1,22 @@
+{
+  "vierpunkt-theme": {
+    "cms": {
+      "blocks": {
+        "threeLinkedCategoryImagePanels": {
+          "label": "Three linked category image panels"
+        }
+      },
+      "categoryCard": {
+        "category": "Category",
+        "placeholder": "Select a category"
+      },
+      "imagePanel": {
+        "subheadline": "Sub-headline (paragraph)"
+      },
+      "linkedCategoryImagePanel": {
+        "label": "Linked category image panel",
+        "help": "The image and H3 heading come from the selected category. The entire card links to that category."
+      }
+    }
+  }
+}

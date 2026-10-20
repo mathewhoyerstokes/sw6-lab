@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<container xmlns="http://symfony.com/schema/dic/services">
+    <services>
+<service xmlns="http://symfony.com/schema/dic/services" id="ShopwarePractice\Cms\HeroCardSliderCmsElementResolver">
+            <tag name="shopware.cms.data_resolver" />
+        </service>
+            </services>
+</container>

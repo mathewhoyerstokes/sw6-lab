@@ -1,0 +1,20 @@
+{
+  "vierpunkt-theme": {
+    "cms": {
+      "blocks": {
+        "promoTextImageHero": {
+          "label": "Promo text and image"
+        }
+      },
+      "promoTextImageHero": {
+        "label": "Promo text and image",
+        "headline": "Headline",
+        "text": "Text",
+        "buttonText": "Button text",
+        "buttonUrl": "Button link",
+        "buttonTwoText": "Second button text",
+        "buttonTwoUrl": "Second button link"
+      }
+    }
+  }
+}

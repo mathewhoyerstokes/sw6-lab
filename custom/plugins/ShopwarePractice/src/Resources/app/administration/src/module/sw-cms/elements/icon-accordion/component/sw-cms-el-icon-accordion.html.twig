@@ -1,0 +1,12 @@
+<div class="sw-cms-el-icon-accordion">
+    <div v-for="(item, index) in items" :key="item.id" class="sw-cms-el-icon-accordion__item">
+        <div class="sw-cms-el-icon-accordion__heading">
+            <img v-if="iconMedia[item.iconMediaId]?.url" :src="iconMedia[item.iconMediaId].url"
+                 class="sw-cms-el-icon-accordion__icon" width="40" height="40" alt="">
+            <strong>{{ item.title || $t('vierpunkt-theme.cms.iconAccordion.title') }}</strong>
+            <span aria-hidden="true">{{ index === 0 ? '−' : '+' }}</span>
+        </div>
+        <p v-if="index === 0">{{ item.text || $t('vierpunkt-theme.cms.iconAccordion.text') }}</p>
+    </div>
+    <p v-if="!items.length">{{ $t('vierpunkt-theme.cms.iconAccordion.help') }}</p>
+</div>

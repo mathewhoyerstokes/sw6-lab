@@ -1,0 +1,7 @@
+{% block sw_cms_element_brand_logo_grid_title_config %}
+    <sw-text-field
+            v-model:value="element.config.headline.value"
+            :label="$t('vierpunkt-theme.cms.brandLogoGrid.headline')"
+            @update:value="onElementUpdate"
+    />
+{% endblock %}

@@ -1,0 +1,36 @@
+{% block cms_block_three_cards %}
+    {# Optional background image per card (disabled).
+       Add a backgroundMedia config field, an admin media picker, and a CMS
+       element resolver that loads the media into element.data.backgroundMedia.
+
+       In the shared cms-element-content-card.html.twig template, add this
+       attribute to the existing .cms-element-content-card div, preserving
+       its background colour fallback in the same style attribute:
+
+       style="background-color: {{ element.translated.config.backgroundColor.value }};
+              {% if element.data.backgroundMedia %}
+                  background-image: url('{{ element.data.backgroundMedia.url }}');
+              {% endif %}"
+
+       Add these styles to _cms-components.scss:
+
+       .cms-element-content-card {
+           background-size: cover;
+           background-position: center;
+           background-repeat: no-repeat;
+       }
+
+       Implementing this on the shared element supports all card block layouts.
+    #}
+    {% set columns = 3 %}
+    {% for index in 1..3 %}
+        {% set element = block.slots.getSlot('card-' ~ index) %}
+        {% if element %}
+            <div class="col-12 col-lg-4 d-flex" data-cms-element-id="{{ element.id }}">
+                {% sw_include '@Storefront/storefront/element/cms-element-' ~ element.type ~ '.html.twig' with {
+                    element: element
+                } %}
+            </div>
+        {% endif %}
+    {% endfor %}
+{% endblock %}

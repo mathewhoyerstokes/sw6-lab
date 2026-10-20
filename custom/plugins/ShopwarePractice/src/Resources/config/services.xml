@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<container xmlns="http://symfony.com/schema/dic/services">
+    <imports>
+        <import resource="cms-library/three-image-panels.xml"/>
+        <import resource="cms-library/category-card-group-grid.xml"/>
+        <import resource="cms-library/3-cards-with-background-image.xml"/>
+        <import resource="cms-library/category-background-card-group-grid.xml"/>
+        <import resource="cms-library/information-card-slider.xml"/>
+        <import resource="cms-library/three-linked-category-image-panels.xml"/>
+        <import resource="cms-library/hero-card-slider.xml"/>
+        <import resource="cms-library/icon-accordion.xml"/>
+    </imports>
+</container>

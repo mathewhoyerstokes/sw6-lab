@@ -1,0 +1,17 @@
+{
+  "vierpunkt-theme": {
+    "cms": {
+      "blocks": {
+        "categoryBackgroundCardGroupGrid": {
+          "label": "Kategorie-Hintergrundkartenraster"
+        }
+      },
+      "categoryBackgroundCard": {
+        "label": "Kategorie-Hintergrundkarte",
+        "category": "Kategorie",
+        "placeholder": "Kategorie auswählen",
+        "seeMore": "Mehr ansehen"
+      }
+    }
+  }
+}

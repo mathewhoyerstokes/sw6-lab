@@ -18,7 +18,7 @@ down:
 shell:
 	docker compose exec web bash
 watch-storefront:
-	docker compose exec -e PROXY_URL=http://localhost:9998 web ./bin/watch-storefront.sh
+	docker compose exec -e PROXY_URL=http://127.0.0.1:10098 -e STOREFRONT_PROXY_PORT=10098 -e STOREFRONT_ASSETS_PORT=10099 web ./bin/watch-storefront.sh ShopwarePractice
 watch-admin:
 	docker compose exec web ./bin/watch-administration.sh
 build-storefront:

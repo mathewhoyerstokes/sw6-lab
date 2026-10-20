@@ -1,0 +1,30 @@
+.cms-block-category-card-group-grid {
+    .cms-block-container-row {
+        row-gap: 24px;
+    }
+}
+
+.cms-block-category-card-group-grid .cms-element-category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    overflow-wrap: anywhere;
+
+    &__image {
+        display: block;
+        flex-shrink: 0;
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        margin-bottom: 16px;
+    }
+
+    &__name {
+        margin: 0;
+    }
+}

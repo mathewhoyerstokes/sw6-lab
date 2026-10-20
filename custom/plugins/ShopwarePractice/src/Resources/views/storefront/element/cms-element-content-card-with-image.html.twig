@@ -1,0 +1,11 @@
+{% sw_extends '@Storefront/storefront/element/cms-element-content-card.html.twig' %}
+
+{% block element_content_card_image %}
+    {% if cardImage and cardImage.data.media %}
+        <div class="cms-content-card-image" data-cms-element-id="{{ cardImage.id }}">
+            {% sw_include '@Storefront/storefront/element/cms-element-' ~ cardImage.type ~ '.html.twig' with {
+                element: cardImage
+            } %}
+        </div>
+    {% endif %}
+{% endblock %}

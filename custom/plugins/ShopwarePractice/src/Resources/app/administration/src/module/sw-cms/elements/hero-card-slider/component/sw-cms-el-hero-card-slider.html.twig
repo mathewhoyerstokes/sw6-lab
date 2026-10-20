@@ -1,0 +1,10 @@
+<div class="sw-cms-el-hero-card-slider">
+    <img v-if="imageUrl" :src="imageUrl" alt="">
+    <div class="sw-cms-el-hero-card-slider__content">
+        <h1>{{ firstSlide.headline || $t('vierpunkt-theme.cms.heroCardSlider.label') }}</h1>
+        <h4>{{ firstSlide.subheadline }}</h4>
+        <span v-if="firstSlide.buttonText" class="hero-preview-button">{{ firstSlide.buttonText }}</span>
+        <span v-if="firstSlide.secondaryButtonText" class="hero-preview-button">{{ firstSlide.secondaryButtonText }}</span>
+        <p>{{ slides.length }} / 6 {{ $t('vierpunkt-theme.cms.heroCardSlider.slide') }}</p>
+    </div>
+</div>

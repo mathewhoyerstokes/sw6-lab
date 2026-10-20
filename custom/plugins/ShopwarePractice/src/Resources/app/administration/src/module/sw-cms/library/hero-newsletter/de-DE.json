@@ -1,0 +1,11 @@
+{
+  "vierpunkt-theme": {
+    "cms": {
+      "blocks": {
+        "heroNewsletter": {
+          "label": "Newsletter"
+        }
+      }
+    }
+  }
+}

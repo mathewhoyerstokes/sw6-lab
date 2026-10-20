@@ -1,0 +1,16 @@
+{% block element_linked_category_image_panel %}
+    {# The resolver loads the selected category, its media and its Shopware-generated category URL.
+       The entire card is one anchor; no button or nested link is needed.
+       Category name/image changes are picked up automatically from the category record. #}
+    {% set category = element.data.category %}
+    {% set config = element.translated.config|default(element.config) %}
+    {% if category and element.data.url %}
+        <a class="cms-element-image-panel cms-element-linked-category-image-panel"
+           href="{{ element.data.url }}"
+           {% if category.media %}style="background-image: url('{{ category.media.url|escape('css') }}');"{% endif %}
+           {% if category.shouldOpenInNewTab %}target="_blank" rel="noopener noreferrer"{% endif %}>
+            <h3>{{ category.translated.name }}</h3>
+            {% if config.text.value|default('') %}<p>{{ config.text.value }}</p>{% endif %}
+        </a>
+    {% endif %}
+{% endblock %}

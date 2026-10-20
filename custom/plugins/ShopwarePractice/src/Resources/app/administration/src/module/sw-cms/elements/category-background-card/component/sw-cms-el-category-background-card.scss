@@ -1,0 +1,33 @@
+.sw-cms-el-category-background-card {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 280px;
+    height: 100%;
+    padding: 24px;
+    border-radius: 8px;
+    background: #343a40 center / cover no-repeat;
+    color: #fff;
+    text-align: center;
+    // Match the subtle storefront overlay while editing.
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        border-radius: inherit;
+        background: rgba(0, 0, 0, 0.25);
+    }
+    &__placeholder {
+        margin-bottom: 16px;
+    }
+    &__button {
+        padding: 10px 16px;
+        border-radius: 4px;
+        background: #189eff;
+        color: #fff;
+    }
+}

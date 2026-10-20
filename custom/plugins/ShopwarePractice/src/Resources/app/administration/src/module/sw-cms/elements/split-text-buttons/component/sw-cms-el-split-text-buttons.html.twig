@@ -1,0 +1,15 @@
+<div class="sw-cms-el-split-text-buttons" :style="panelStyle">
+    <div v-for="column in orderedColumns" :key="column" class="sw-cms-el-split-text-buttons__column">
+        <template v-if="column === 'heading'">
+            <h2>{{ element.config.headline.value }}</h2>
+            <p class="sw-cms-el-split-text-buttons__subheadline" v-if="element.config.subheadline.value">{{ element.config.subheadline.value }}</p>
+        </template>
+        <template v-else>
+            <p>{{ element.config.text.value }}</p>
+            <div class="sw-cms-el-split-text-buttons__buttons">
+                <span v-if="element.config.buttonText.value">{{ element.config.buttonText.value }}</span>
+                <span v-if="element.config.buttonTwoText.value">{{ element.config.buttonTwoText.value }}</span>
+            </div>
+        </template>
+    </div>
+</div>

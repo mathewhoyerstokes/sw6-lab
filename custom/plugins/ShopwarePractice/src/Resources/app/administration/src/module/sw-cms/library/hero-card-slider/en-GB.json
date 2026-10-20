@@ -1,0 +1,22 @@
+{
+  "vierpunkt-theme": {
+    "cms": {
+      "heroCardSlider": {
+        "label": "Hero card slider",
+        "help": "Add up to six slides. Slides without an image are hidden in the storefront. Both buttons need a label and a URL.",
+        "slide": "Slide",
+        "image": "Background image",
+        "headline": "Heading (H1)",
+        "subheadline": "Supporting heading (H4)",
+        "buttonText": "Primary button text",
+        "buttonUrl": "Primary button URL",
+        "secondaryButtonText": "Secondary button text",
+        "secondaryButtonUrl": "Secondary button URL",
+        "up": "Move up",
+        "down": "Move down",
+        "remove": "Remove slide",
+        "add": "Add slide"
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{% block element_icon_accordion %}
+    {# Bootstrap Collapse is already loaded by Shopware: no custom storefront plugin is needed.
+       data-bs-parent keeps one panel open at a time. Remove it to allow multiple open panels.
+       The CMS element ID isolates each accordion when several are placed on the same page.
+       Titles and paragraph text remain escaped plain text, not HTML. #}
+    {% set config = element.translated.config|default(element.config) %}
+    {% set items = config.items.value|default([])|slice(0, 6) %}
+    {% set accordionId = 'icon-accordion-' ~ element.id %}
+    <div class="cms-element-icon-accordion accordion" id="{{ accordionId }}">
+        {% for item in items %}
+            {# Empty titles are omitted. A missing/deleted icon leaves the title and panel usable. #}
+            {% if item.title|default('')|trim %}
+                {% set headingId = accordionId ~ '-heading-' ~ loop.index %}
+                {% set panelId = accordionId ~ '-panel-' ~ loop.index %}
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="{{ headingId }}">
+                        <button class="accordion-button collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#{{ panelId }}"
+                                aria-expanded="false" aria-controls="{{ panelId }}">
+                            {# The resolver loads the uploaded SVG media ID; use an img, not inline SVG markup.
+                               A 40px box and object-fit: contain preserve its proportions. #}
+                            {% set icon = element.data.icons[item.iconMediaId|default('')]|default(null) %}
+                            {% if icon and icon.url %}
+                                <img class="cms-accordion-icon" src="{{ icon.url|sw_encode_url }}"
+                                     width="40" height="40" alt="" loading="lazy">
+                            {% endif %}
+                            <span class="cms-accordion-title">{{ item.title }}</span>
+                        </button>
+                    </h3>
+                    <div class="accordion-collapse collapse" id="{{ panelId }}"
+                         data-bs-parent="#{{ accordionId }}" role="region" aria-labelledby="{{ headingId }}">
+                        <div class="accordion-body"><p>{{ item.text|default('') }}</p></div>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endblock %}

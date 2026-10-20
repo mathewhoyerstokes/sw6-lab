@@ -1,0 +1,8 @@
+.sw-cms-block-four-cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+    .sw-cms-slot {
+        min-width: 0;
+    }
+}

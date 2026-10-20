@@ -1,0 +1,42 @@
+{% block cms_block_hero_newsletter %}
+    <div class="cms-block cms-block-hero-newsletter container my-5">
+        <div class="row g-0 align-items-center rounded overflow-hidden">
+
+            {# Left Side: Image #}
+            <div class="col-12 col-md-6 cms-block-hero-newsletter__image-wrapper">
+                {% if block.slots.getSlot('left') %}
+                    {% set slot = block.slots.getSlot('left') %}
+                    {% sw_include "@Storefront/storefront/element/cms-element-" ~ slot.type ~ ".html.twig" with {
+                        element: slot,
+                        disabled: true
+                    } %}
+                {% endif %}
+            </div>
+
+            {# Right Side: Content Box #}
+            <div class="col-12 col-md-6 p-4 p-lg-5 cms-block-hero-newsletter__content-wrapper">
+                <h3 class="mb-4 text-dark font-weight-bold">
+                    {{ block.translated.config.heading.value|default('Stay Updated!') }}
+                </h3>
+
+                <div class="cms-block-hero-newsletter__form">
+                    {% set form = block.slots.getSlot('right') %}
+                    {% if form and form.type == 'form' and form.translated.config.type.value == 'newsletter' %}
+                        <div class="cms-element-form" data-cms-element-id="{{ form.id }}">
+                            {% sw_include '@Storefront/storefront/element/hero-newsletter-signup.html.twig' with {
+                                element: form,
+                                action: 'frontend.form.newsletter.register.handle',
+                                submitText: 'newsletter.formSubmit'
+                            } %}
+                        </div>
+                    {% elseif form %}
+                        {% sw_include "@Storefront/storefront/element/cms-element-" ~ form.type ~ ".html.twig" with {
+                            element: form
+                        } %}
+                    {% endif %}
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

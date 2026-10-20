@@ -1,0 +1,7 @@
+{% block sw_cms_el_category_card %}
+    <div class="sw-cms-el-category-card" :aria-busy="isLoading">
+        <img v-if="category && category.media" :src="category.media.url" alt="">
+        <span v-else-if="!category" class="sw-cms-el-category-card__placeholder"></span>
+        <h4>{{ categoryName }}</h4>
+    </div>
+{% endblock %}

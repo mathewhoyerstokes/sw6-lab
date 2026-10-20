@@ -1,0 +1,23 @@
+.sw-cms-block-masonry-grid {
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 16px;
+    }
+    &__column {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        min-width: 0;
+    }
+    &__number {
+        display: block;
+        margin-bottom: 4px;
+        font-size: 12px;
+        color: #52667a;
+    }
+    .sw-cms-el-image {
+        min-height: 120px;
+    }
+}

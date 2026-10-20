@@ -1,0 +1,20 @@
+
+<div class="sw-cms-el-config-information-card-slider">
+    <p>{{ $t('vierpunkt-theme.cms.informationCardSlider.help') }}</p>
+    <section v-for="(slide, index) in slides" :key="slide.id" class="information-card-slider-config-slide">
+        <h3>{{ $t('vierpunkt-theme.cms.informationCardSlider.slide') }} {{ index + 1 }}</h3>
+        <sw-media-field :value="slide.mediaId" :label="$t('vierpunkt-theme.cms.informationCardSlider.image')" file-accept="image/*" @update:value="updateSlide(index, 'mediaId', $event)" />
+        <sw-textarea-field :value="slide.headline" :label="$t('vierpunkt-theme.cms.informationCardSlider.headline')" @update:value="updateSlide(index, 'headline', $event)" />
+        <sw-textarea-field :value="slide.text" :label="$t('vierpunkt-theme.cms.informationCardSlider.text')" @update:value="updateSlide(index, 'text', $event)" />
+        <sw-text-field :value="slide.buttonText" :label="$t('vierpunkt-theme.cms.informationCardSlider.buttonText')" @update:value="updateSlide(index, 'buttonText', $event)" />
+        <sw-text-field :value="slide.buttonUrl" :label="$t('vierpunkt-theme.cms.informationCardSlider.buttonUrl')" @update:value="updateSlide(index, 'buttonUrl', $event)" />
+        <sw-text-field :value="slide.secondaryButtonText" :label="$t('vierpunkt-theme.cms.informationCardSlider.secondaryButtonText')" @update:value="updateSlide(index, 'secondaryButtonText', $event)" />
+        <sw-text-field :value="slide.secondaryButtonUrl" :label="$t('vierpunkt-theme.cms.informationCardSlider.secondaryButtonUrl')" @update:value="updateSlide(index, 'secondaryButtonUrl', $event)" />
+        <div class="information-card-slider-config-actions">
+            <mt-button size="small" :disabled="index === 0" @click="moveSlide(index, -1)">{{ $t('vierpunkt-theme.cms.informationCardSlider.up') }}</mt-button>
+            <mt-button size="small" :disabled="index === slides.length - 1" @click="moveSlide(index, 1)">{{ $t('vierpunkt-theme.cms.informationCardSlider.down') }}</mt-button>
+            <mt-button size="small" variant="critical" @click="removeSlide(index)">{{ $t('vierpunkt-theme.cms.informationCardSlider.remove') }}</mt-button>
+        </div>
+    </section>
+    <mt-button :disabled="slides.length >= 6" @click="addSlide">{{ $t('vierpunkt-theme.cms.informationCardSlider.add') }} ({{ slides.length }}/6)</mt-button>
+</div>

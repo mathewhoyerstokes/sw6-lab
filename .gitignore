@@ -1,5 +1,6 @@
 /.idea
 /vendor/
+/custom/plugins/SwagPayPal/
 
 ###> shopware/core ###
 .env.local

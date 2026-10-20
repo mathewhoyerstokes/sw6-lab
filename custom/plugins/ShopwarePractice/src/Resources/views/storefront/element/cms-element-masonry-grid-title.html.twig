@@ -1,0 +1,6 @@
+{% block element_masonry_grid_title %}
+    {% set headline = element.translated.config.headline.value|default('') %}
+    {% if headline %}
+        <h2 class="cms-masonry-grid__headline">{{ headline }}</h2>
+    {% endif %}
+{% endblock %}

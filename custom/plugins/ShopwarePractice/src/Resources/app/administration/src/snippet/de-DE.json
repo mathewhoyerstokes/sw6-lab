@@ -1,0 +1,36 @@
+{
+  "vierpunkt-theme": {
+    "cms": {
+      "blocks": {
+        "fourCardsStacked": {
+          "label": "Vier Karten (2 × 2)"
+        },
+        "promoImageTextHero": {
+          "label": "Promo-Bild und Text"
+        },
+        "heroNewsletter": {
+          "label": "Newsletter"
+        }
+      },
+      "contentCard": {
+        "label": "Inhaltskarte",
+        "backgroundColor": "Hintergrundfarbe",
+        "headline": "Überschrift",
+        "text": "Text",
+        "buttonText": "Button-Beschriftung",
+        "buttonUrl": "Button-Link",
+        "imageUrl": "Bild-URL",
+        "imageAlt": "Alternativtext für das Bild"
+      },
+      "promoImageTextHero": {
+        "label": "Promo-Bild und Text",
+        "headline": "Überschrift",
+        "text": "Text",
+        "buttonText": "Button-Text",
+        "buttonUrl": "Button-Link",
+        "buttonTwoText": "Zweiter Button-Text",
+        "buttonTwoUrl": "Zweiter Button-Link"
+      }
+    }
+  }
+}

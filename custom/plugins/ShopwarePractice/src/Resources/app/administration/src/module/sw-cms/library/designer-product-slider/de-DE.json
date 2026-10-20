@@ -1,0 +1,11 @@
+{
+  "vierpunkt-theme": {
+    "cms": {
+      "designerSliderHeader": {
+        "label": "Produkt-Slider-Überschrift",
+        "headline": "Slider-Überschrift",
+        "subheadline": "Slider-Unterüberschrift"
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.sw-cms-block-3-cards-with-background-image {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    .sw-cms-slot {
+        min-width: 0;
+    }
+}

@@ -1,0 +1,40 @@
+// Adapt this block to the new design here. Shopware supplies Bootstrap utilities and mixins.
+.cms-block-masonry-grid {
+    .cms-masonry-grid__items {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        @include media-breakpoint-up(md) {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            align-items: start;
+        }
+    }
+    .cms-masonry-grid__column {
+        display: contents;
+        @include media-breakpoint-up(md) {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            min-width: 0;
+        }
+    }
+    .cms-masonry-grid__item {
+        order: var(--masonry-order);
+        min-width: 0;
+        .cms-element-image,
+        .cms-element-alignment,
+        .cms-image-container {
+            width: 100%;
+            height: auto;
+            min-height: 0 !important;
+        }
+        .cms-image-container .cms-image {
+            position: static;
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+}

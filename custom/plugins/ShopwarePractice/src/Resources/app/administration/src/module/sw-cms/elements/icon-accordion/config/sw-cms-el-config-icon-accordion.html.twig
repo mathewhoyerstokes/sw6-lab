@@ -1,0 +1,22 @@
+<div class="sw-cms-el-config-icon-accordion">
+    <p>{{ $t('vierpunkt-theme.cms.iconAccordion.help') }}</p>
+    <section v-for="(item, index) in items" :key="item.id" class="icon-accordion-config-item">
+        <h3>{{ $t('vierpunkt-theme.cms.iconAccordion.item') }} {{ index + 1 }}</h3>
+
+        <sw-media-field :value="item.iconMediaId || null" file-accept="image/svg+xml,.svg"
+            :label="$t('vierpunkt-theme.cms.iconAccordion.icon')"
+            @update:value="updateItem(index, 'iconMediaId', $event)" />
+        <sw-text-field :value="item.title"
+            :label="$t('vierpunkt-theme.cms.iconAccordion.title')"
+            @update:value="updateItem(index, 'title', $event)" />
+        <sw-textarea-field :value="item.text"
+            :label="$t('vierpunkt-theme.cms.iconAccordion.text')"
+            @update:value="updateItem(index, 'text', $event)" />
+        <div class="icon-accordion-config-actions">
+            <mt-button size="small" :disabled="index === 0" @click="moveItem(index, -1)">{{ $t('vierpunkt-theme.cms.iconAccordion.up') }}</mt-button>
+            <mt-button size="small" :disabled="index === items.length - 1" @click="moveItem(index, 1)">{{ $t('vierpunkt-theme.cms.iconAccordion.down') }}</mt-button>
+            <mt-button size="small" variant="critical" @click="removeItem(index)">{{ $t('vierpunkt-theme.cms.iconAccordion.remove') }}</mt-button>
+        </div>
+    </section>
+    <mt-button :disabled="items.length >= 6" @click="addItem">{{ $t('vierpunkt-theme.cms.iconAccordion.add') }} ({{ items.length }}/6)</mt-button>
+</div>

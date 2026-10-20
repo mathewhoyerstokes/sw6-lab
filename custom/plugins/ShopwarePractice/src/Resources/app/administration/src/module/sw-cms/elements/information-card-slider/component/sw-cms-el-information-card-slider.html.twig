@@ -1,0 +1,12 @@
+<div class="sw-cms-el-information-card-slider">
+    <article v-for="(slide, index) in slides" :key="slide.id" class="sw-cms-el-information-card-slider__card">
+        <img v-if="media[slide.mediaId]" :src="media[slide.mediaId].url" alt="">
+        <div v-else class="sw-cms-el-information-card-slider__placeholder"></div>
+        <div class="sw-cms-el-information-card-slider__content">
+            <h3>{{ slide.headline || $t('vierpunkt-theme.cms.informationCardSlider.slide') + ' ' + (index + 1) }}</h3>
+            <p>{{ slide.text }}</p>
+            <span v-if="slide.buttonText" class="information-preview-button">{{ slide.buttonText }}</span>
+            <span v-if="slide.secondaryButtonText" class="information-preview-button">{{ slide.secondaryButtonText }}</span>
+        </div>
+    </article>
+</div>

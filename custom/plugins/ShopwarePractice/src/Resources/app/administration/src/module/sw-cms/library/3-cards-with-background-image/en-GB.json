@@ -1,0 +1,22 @@
+{
+  "vierpunkt-theme": {
+    "cms": {
+      "blocks": {
+        "threeCardsWithBackgroundImage": {
+          "label": "3 cards with background image"
+        }
+      },
+      "contentCard": {
+        "backgroundColor": "Background colour",
+        "headline": "Heading",
+        "text": "Text",
+        "buttonText": "Button label",
+        "buttonUrl": "Button link"
+      },
+      "backgroundCard": {
+        "label": "Background image card",
+        "backgroundMedia": "Background image"
+      }
+    }
+  }
+}

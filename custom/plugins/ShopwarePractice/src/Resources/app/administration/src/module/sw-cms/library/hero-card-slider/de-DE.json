@@ -1,0 +1,22 @@
+{
+  "vierpunkt-theme": {
+    "cms": {
+      "heroCardSlider": {
+        "label": "Hero-Karten-Slider",
+        "help": "Bis zu sechs Folien. Folien ohne Bild werden im Shop ausgeblendet. Beide Buttons benötigen Text und URL.",
+        "slide": "Folie",
+        "image": "Hintergrundbild",
+        "headline": "Überschrift (H1)",
+        "subheadline": "Unterüberschrift (H4)",
+        "buttonText": "Primärer Buttontext",
+        "buttonUrl": "Primäre Button-URL",
+        "secondaryButtonText": "Sekundärer Buttontext",
+        "secondaryButtonUrl": "Sekundäre Button-URL",
+        "up": "Nach oben",
+        "down": "Nach unten",
+        "remove": "Folie entfernen",
+        "add": "Folie hinzufügen"
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.sw-cms-block-3-cards-with-image {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    &__card {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+    }
+    .sw-cms-slot {
+        min-width: 0;
+        height: auto;
+    }
+    .sw-cms-slot:last-child {
+        flex: 1;
+    }
+    .sw-cms-el-image {
+        min-height: 180px;
+    }
+}

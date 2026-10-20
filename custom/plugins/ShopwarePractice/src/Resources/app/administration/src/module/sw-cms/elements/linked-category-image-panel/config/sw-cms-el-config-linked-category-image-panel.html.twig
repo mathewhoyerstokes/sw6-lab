@@ -1,0 +1,13 @@
+<div class="sw-cms-el-config-linked-category-image-panel">
+    <p>{{ $t('vierpunkt-theme.cms.linkedCategoryImagePanel.help') }}</p>
+    <sw-entity-single-select
+        :value="element.config.category.value" entity="category" :criteria="categoryCriteria"
+        :label="$t('vierpunkt-theme.cms.categoryCard.category')"
+        :placeholder="$t('vierpunkt-theme.cms.categoryCard.placeholder')"
+        show-clearable-button @update:value="updateField('category', $event)"
+    />
+
+    <sw-textarea-field :value="element.config.text.value"
+        :label="$t('vierpunkt-theme.cms.imagePanel.subheadline')"
+        @update:value="updateField('text', $event)" />
+</div>

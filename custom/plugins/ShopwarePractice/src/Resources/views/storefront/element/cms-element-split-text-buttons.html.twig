@@ -1,0 +1,42 @@
+{% block element_split_text_buttons %}
+    {% set config = element.translated.config|default(element.config) %}
+    {# This color covers the component. For an entire CMS section, use Shopware's
+       section background setting and clear this element's background color.
+       Use a full-width section for edge-to-edge color; the inner container aligns the text. #}
+    {% set orderedColumns = config.headlineOnRight.value ? ['content', 'heading'] : ['heading', 'content'] %}
+    <div class="cms-element-split-text-buttons"
+         style="background-color: {{ config.backgroundColor.value|default('transparent') }}; color: {{ config.textColor.value|default('inherit') }};">
+        <div class="container">
+            <div class="row g-4 g-lg-5 align-items-start">
+                {# Change the actual DOM order so the switch is reflected on mobile and for keyboard users too. #}
+                {% for column in orderedColumns %}
+                    <div class="col-12 col-md-6">
+                        {% if column == 'heading' %}
+                            {% if config.headline.value %}<h2 class="split-text-buttons-headline">{{ config.headline.value }}</h2>{% endif %}
+                            {% if config.subheadline.value %}<p class="split-text-buttons-subheadline">{{ config.subheadline.value }}</p>{% endif %}
+                        {% else %}
+                            {# Dedicated paragraph class for styling/copying this component later. #}
+                            {% if config.text.value %}<p class="split-text-buttons-text">{{ config.text.value }}</p>{% endif %}
+                            <div class="split-text-buttons-actions">
+                                {% set buttons = [
+                                    { text: config.buttonText.value, url: config.buttonUrl.value },
+                                    { text: config.buttonTwoText.value, url: config.buttonTwoUrl.value }
+                                ] %}
+                                {% for button in buttons %}
+                                    {% set buttonUrl = button.url|default('')|trim %}
+                                    {% if buttonUrl|lower starts with 'www.' %}
+                                        {% set buttonUrl = 'https://' ~ buttonUrl %}
+                                    {% endif %}
+                                    {% set safeUrl = buttonUrl starts with 'https://' or buttonUrl starts with 'http://' or (buttonUrl starts with '/' and not (buttonUrl starts with '//') and not (buttonUrl starts with '/\\')) or buttonUrl starts with '#' %}
+                                    {% if button.text and safeUrl %}
+                                        <a class="btn btn-light" href="{{ buttonUrl }}">{{ button.text }}</a>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{
+  "vierpunkt-theme": {
+    "cms": {
+      "blocks": {
+        "masonryGrid": {
+          "label": "Masonry grid"
+        }
+      },
+      "masonryGrid": {
+        "headline": "Grid heading"
+      }
+    }
+  }
+}

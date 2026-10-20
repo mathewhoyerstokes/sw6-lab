@@ -1,0 +1,8 @@
+{% block element_designer_slider_header %}
+    {# Two plain-text fields replace the original rich-text heading/description slots. #}
+    {% set config = element.translated.config|default(element.config) %}
+    <div class="cms-element-designer-slider-header">
+        {% if config.headline.value %}<h2 class="designer-slider-headline">{{ config.headline.value }}</h2>{% endif %}
+        {% if config.subheadline.value %}<p class="designer-slider-subheadline">{{ config.subheadline.value }}</p>{% endif %}
+    </div>
+{% endblock %}
