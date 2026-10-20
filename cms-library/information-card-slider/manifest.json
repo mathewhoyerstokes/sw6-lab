@@ -33,8 +33,8 @@
     "src/Resources/app/administration/src/module/sw-cms/library/information-card-slider/index.js",
     "src/Resources/app/storefront/src/scss/cms-library/_information-card-slider.scss",
     "src/Resources/config/cms-library/information-card-slider.xml",
-    "src/Resources/snippet/information-card-slider.storefront.de-DE.json",
-    "src/Resources/snippet/information-card-slider.storefront.en-GB.json",
+    "src/Resources/snippet/information-card-slider.de-DE.json",
+    "src/Resources/snippet/information-card-slider.en-GB.json",
     "src/Resources/views/storefront/block/cms-block-information-card-slider.html.twig",
     "src/Resources/views/storefront/element/cms-element-information-card-slider.html.twig"
   ]

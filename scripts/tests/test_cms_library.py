@@ -17,6 +17,14 @@ SPEC.loader.exec_module(EXPORTER)
 
 
 class PortablePackagesTest(unittest.TestCase):
+    def test_storefront_snippet_filenames_identify_the_language(self):
+        for path in (EXPORTER.SOURCE / 'Resources/snippet').glob('*.json'):
+            with self.subTest(file=path.name):
+                # Shopware reads the second dot-separated segment as the locale.
+                parts = path.stem.split('.')
+                self.assertIn(len(parts), (2, 3))
+                self.assertIn(parts[1], ('en-GB', 'de-DE'))
+
     def test_every_package_is_self_contained(self):
         catalog = json.loads((ROOT / 'cms-library/catalog.json').read_text())
         self.assertEqual(len({item['name'] for item in catalog}), len(catalog))

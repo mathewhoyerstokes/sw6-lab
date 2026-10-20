@@ -33,8 +33,8 @@
     "src/Resources/app/administration/src/module/sw-cms/library/hero-card-slider/index.js",
     "src/Resources/app/storefront/src/scss/cms-library/_hero-card-slider.scss",
     "src/Resources/config/cms-library/hero-card-slider.xml",
-    "src/Resources/snippet/hero-card-slider.storefront.de-DE.json",
-    "src/Resources/snippet/hero-card-slider.storefront.en-GB.json",
+    "src/Resources/snippet/hero-card-slider.de-DE.json",
+    "src/Resources/snippet/hero-card-slider.en-GB.json",
     "src/Resources/views/storefront/block/cms-block-hero-card-slider.html.twig",
     "src/Resources/views/storefront/element/cms-element-hero-card-slider.html.twig"
   ]

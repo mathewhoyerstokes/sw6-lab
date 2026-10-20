@@ -20,7 +20,13 @@
                 {% set image = block.slots.getSlot('image-' ~ index) %}
                 {% if image and image.data.media.url %}
                     {% set columnIndex = imageCount % 3 %}
-                    {% set imageColumns = imageColumns|map((items, key) => key == columnIndex ? items|merge([{element: image, position: index}]) : items) %}
+                    {% set updatedColumns = [] %}
+                    {% for key, items in imageColumns %}
+                        {% set updatedColumns = updatedColumns|merge([
+                            key == columnIndex ? items|merge([{element: image, position: index}]) : items
+                        ]) %}
+                    {% endfor %}
+                    {% set imageColumns = updatedColumns %}
                     {% set imageCount = imageCount + 1 %}
                 {% endif %}
             {% endfor %}

@@ -34,8 +34,8 @@
     "src/Resources/app/administration/src/module/sw-cms/library/category-background-card-group-grid/index.js",
     "src/Resources/app/storefront/src/scss/cms-library/_category-background-card-group-grid.scss",
     "src/Resources/config/cms-library/category-background-card-group-grid.xml",
-    "src/Resources/snippet/category-background-card-group-grid.storefront.de-DE.json",
-    "src/Resources/snippet/category-background-card-group-grid.storefront.en-GB.json",
+    "src/Resources/snippet/category-background-card-group-grid.de-DE.json",
+    "src/Resources/snippet/category-background-card-group-grid.en-GB.json",
     "src/Resources/views/storefront/block/cms-block-category-background-card-group-grid.html.twig",
     "src/Resources/views/storefront/element/cms-element-category-background-card.html.twig"
   ]

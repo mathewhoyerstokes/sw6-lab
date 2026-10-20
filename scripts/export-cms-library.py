@@ -123,7 +123,7 @@ def build_package(item):
                         f"Shopware.Locale.extend('{locale}', {variable});"])
     files[entry / 'index.js'] = '\n'.join(imports) + '\n'
 
-    for snippet in sorted((SOURCE / 'Resources/snippet').glob(name + '.storefront.*.json')):
+    for snippet in sorted((SOURCE / 'Resources/snippet').glob(name + '.*.json')):
         add(snippet.relative_to(SOURCE))
 
     style = (SOURCE / item['style']).read_text()
