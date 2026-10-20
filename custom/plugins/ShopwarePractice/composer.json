@@ -1,0 +1,32 @@
+{
+    "name": "shopware-practice/theme",
+    "description": "Shopware Practice theme for Shopware 6.6, using the 7-1 SCSS layout.",
+    "version": "1.0.0",
+    "type": "shopware-platform-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shopware Practice"
+        }
+    ],
+    "require": {
+        "shopware/core": "~6.6.0",
+        "shopware/storefront": "~6.6.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "ShopwarePractice\\ShopwarePractice",
+        "label": {
+            "de-DE": "Shopware Practice",
+            "en-GB": "Shopware Practice"
+        },
+        "description": {
+            "de-DE": "Übungstheme mit 7-1 SCSS Layout und angepasstem Footer.",
+            "en-GB": "Practice theme with a 7-1 SCSS layout and a custom footer."
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "ShopwarePractice\\": "src/"
+        }
+    }
+}

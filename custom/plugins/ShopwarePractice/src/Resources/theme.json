@@ -1,0 +1,27 @@
+{
+    "name": "Shopware Practice",
+    "author": "Shopware Practice",
+    "description": {
+        "en-GB": "Practice theme with a 7-1 SCSS layout",
+        "de-DE": "Übungstheme mit 7-1 SCSS Layout"
+    },
+    "views": [
+        "@Storefront",
+        "@Plugins",
+        "@ShopwarePractice"
+    ],
+    "style": [
+        "app/storefront/src/scss/overrides.scss",
+        "@Storefront",
+        "app/storefront/src/scss/base.scss"
+    ],
+    "script": [
+        "@Storefront"
+    ],
+    "asset": [
+        "@Storefront"
+    ],
+    "configInheritance": [
+        "@Storefront"
+    ]
+}

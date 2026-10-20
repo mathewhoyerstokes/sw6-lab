@@ -1,0 +1,13 @@
+{% sw_extends '@Storefront/storefront/layout/footer/footer.html.twig' %}
+
+{% block layout_footer_copyright %}
+    <div class="footer-practice">
+        <p class="footer-practice__kicker">Shopware Practice</p>
+        <p class="footer-practice__text">
+            This footer is rendered by the Shopware Practice theme on Shopware 6.6.
+            The band is styled from the 7-1 layout stylesheet.
+        </p>
+    </div>
+
+    {{ parent() }}
+{% endblock %}

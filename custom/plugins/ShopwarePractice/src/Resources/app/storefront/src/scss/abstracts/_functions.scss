@@ -1,0 +1,3 @@
+@function practice-space($steps) {
+    @return $steps * $practice-space;
+}

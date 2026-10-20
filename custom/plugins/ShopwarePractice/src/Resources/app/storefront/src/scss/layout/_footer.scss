@@ -1,0 +1,15 @@
+.footer-practice {
+    margin-bottom: practice-space(4);
+    padding: practice-space(4) practice-space(5);
+    background: $practice-accent;
+    color: $practice-on-accent;
+    border-radius: practice-space(1);
+
+    &__kicker {
+        @include practice-kicker;
+    }
+
+    &__text {
+        @extend %practice-reset-paragraph;
+    }
+}
