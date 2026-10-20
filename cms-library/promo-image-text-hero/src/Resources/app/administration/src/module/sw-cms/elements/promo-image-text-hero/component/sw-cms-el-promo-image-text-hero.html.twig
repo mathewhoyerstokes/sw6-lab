@@ -1,0 +1,10 @@
+{% block sw_cms_el_promo_image_text_hero %}
+    <div class="sw-cms-el-promo-image-text-hero">
+        <h3>{{ element.config.headline.value || $t('vierpunkt-theme.cms.promoImageTextHero.headline') }}</h3>
+        <p>{{ element.config.text.value || $t('vierpunkt-theme.cms.promoImageTextHero.text') }}</p>
+        <div class="sw-cms-el-promo-image-text-hero__buttons">
+            <span>{{ element.config.buttonText.value || $t('vierpunkt-theme.cms.promoImageTextHero.buttonText') }}</span>
+            <span>{{ element.config.buttonTwoText.value || $t('vierpunkt-theme.cms.promoImageTextHero.buttonTwoText') }}</span>
+        </div>
+    </div>
+{% endblock %}

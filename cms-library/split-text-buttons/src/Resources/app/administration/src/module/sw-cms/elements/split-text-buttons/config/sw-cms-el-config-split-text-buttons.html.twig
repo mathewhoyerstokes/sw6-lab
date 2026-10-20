@@ -1,0 +1,14 @@
+<div class="sw-cms-el-config-split-text-buttons">
+    <p>{{ $t('vierpunkt-theme.cms.splitTextButtons.backgroundHelp') }}</p>
+
+    <sw-colorpicker color-output="hex" :alpha="false" :z-index="1001" :value="element.config.backgroundColor.value" :label="$t('vierpunkt-theme.cms.splitTextButtons.backgroundColor')" @update:value="updateField('backgroundColor', $event)" />
+    <sw-colorpicker color-output="hex" :alpha="false" :z-index="1001" :value="element.config.textColor.value" :label="$t('vierpunkt-theme.cms.splitTextButtons.textColor')" @update:value="updateField('textColor', $event)" />
+    <sw-switch-field :value="element.config.headlineOnRight.value" :label="$t('vierpunkt-theme.cms.splitTextButtons.headlineOnRight')" @update:value="updateField('headlineOnRight', $event)" />
+    <sw-text-field :value="element.config.headline.value" :label="$t('vierpunkt-theme.cms.splitTextButtons.headline')" @update:value="updateField('headline', $event)" />
+    <sw-text-field :value="element.config.subheadline.value" :label="$t('vierpunkt-theme.cms.splitTextButtons.subheadline')" @update:value="updateField('subheadline', $event)" />
+    <sw-textarea-field :value="element.config.text.value" :label="$t('vierpunkt-theme.cms.splitTextButtons.text')" @update:value="updateField('text', $event)" />
+    <sw-text-field :value="element.config.buttonText.value" :label="$t('vierpunkt-theme.cms.splitTextButtons.buttonText')" @update:value="updateField('buttonText', $event)" />
+    <sw-text-field :value="element.config.buttonUrl.value" :label="$t('vierpunkt-theme.cms.splitTextButtons.buttonUrl')" @update:value="updateField('buttonUrl', $event)" />
+    <sw-text-field :value="element.config.buttonTwoText.value" :label="$t('vierpunkt-theme.cms.splitTextButtons.buttonTwoText')" @update:value="updateField('buttonTwoText', $event)" />
+    <sw-text-field :value="element.config.buttonTwoUrl.value" :label="$t('vierpunkt-theme.cms.splitTextButtons.buttonTwoUrl')" @update:value="updateField('buttonTwoUrl', $event)" />
+</div>

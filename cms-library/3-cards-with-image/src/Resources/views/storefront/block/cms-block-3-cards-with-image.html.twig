@@ -1,0 +1,21 @@
+{% block cms_block_three_cards_with_image %}
+    {% set columns = 3 %}
+    {% for index in 1..3 %}
+        {% set element = block.slots.getSlot('card-' ~ index) %}
+        {% set cardImage = block.slots.getSlot('image-' ~ index) %}
+        {% if element %}
+            <div class="col-12 col-lg-4 d-flex" data-cms-element-id="{{ element.id }}">
+                {% if element.type == 'content-card' %}
+                    {% sw_include '@Storefront/storefront/element/cms-element-content-card-with-image.html.twig' with {
+                        element: element,
+                        cardImage: cardImage
+                    } %}
+                {% else %}
+                    {% sw_include '@Storefront/storefront/element/cms-element-' ~ element.type ~ '.html.twig' with {
+                        element: element
+                    } %}
+                {% endif %}
+            </div>
+        {% endif %}
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,24 @@
+{
+  "vierpunkt-theme": {
+    "cms": {
+      "blocks": {
+        "threeImagePanels": {
+          "label": "Three image panels (no gaps)"
+        }
+      },
+      "contentCard": {
+        "headline": "Heading",
+        "text": "Text",
+        "buttonText": "Button label",
+        "buttonUrl": "Button link"
+      },
+      "backgroundCard": {
+        "backgroundMedia": "Background image"
+      },
+      "imagePanel": {
+        "label": "Image panel",
+        "subheadline": "Sub-headline (paragraph)"
+      }
+    }
+  }
+}

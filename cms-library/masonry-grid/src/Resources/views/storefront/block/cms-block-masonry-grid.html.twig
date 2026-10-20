@@ -1,0 +1,42 @@
+{% block block_masonry_grid %}
+    {% set title = block.slots.getSlot('title') %}
+
+    {% if title %}
+        <div class="col-12 cms-masonry-grid__title" data-cms-element-id="{{ title.id }}">
+            {% sw_include '@Storefront/storefront/element/cms-element-' ~ title.type ~ '.html.twig' with {
+                element: title
+            } %}
+        </div>
+    {% endif %}
+
+    <div class="col-12">
+        <div class="cms-masonry-grid__items">
+            {# Distribute populated images left to right: 1/4/7/10, 2/5/8, 3/6/9.
+               Empty slots do not take a turn. Each column stacks images naturally.
+               The original slot index restores image order in the mobile layout. #}
+            {% set imageColumns = [[], [], []] %}
+            {% set imageCount = 0 %}
+            {% for index in 1..10 %}
+                {% set image = block.slots.getSlot('image-' ~ index) %}
+                {% if image and image.data.media.url %}
+                    {% set columnIndex = imageCount % 3 %}
+                    {% set imageColumns = imageColumns|map((items, key) => key == columnIndex ? items|merge([{element: image, position: index}]) : items) %}
+                    {% set imageCount = imageCount + 1 %}
+                {% endif %}
+            {% endfor %}
+
+            {% for imageColumn in imageColumns %}
+                <div class="cms-masonry-grid__column">
+                    {% for item in imageColumn %}
+                        <div class="cms-masonry-grid__item" style="--masonry-order: {{ item.position }};"
+                             data-cms-element-id="{{ item.element.id }}">
+                            {% sw_include '@Storefront/storefront/element/cms-element-' ~ item.element.type ~ '.html.twig' with {
+                                element: item.element
+                            } %}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

@@ -17,14 +17,16 @@
                 {% for slide in slides %}
                     <div class="information-card-slider-slide">
                         <article class="information-card-slider-card">
-                            {% sw_thumbnails 'information-card-slider-image' with {
-                                media: slide.media,
-                                sizes: { xs: '100vw', md: '50vw', lg: '33vw' },
-                                attributes: {
-                                    class: 'information-card-slider-image',
-                                    alt: slide.media.translated.alt|default(''), loading: 'lazy'
-                                }
-                            } %}
+                            {% if slide.media %}
+                                {% sw_thumbnails 'information-card-slider-image' with {
+                                    media: slide.media,
+                                    sizes: { xs: '100vw', md: '50vw', lg: '33vw' },
+                                    attributes: {
+                                        class: 'information-card-slider-image',
+                                        alt: slide.media.translated.alt|default(''), loading: 'lazy'
+                                    }
+                                } %}
+                            {% endif %}
                             <div class="information-card-slider-content">
                                 {% if slide.headline|default('') %}<h3>{{ slide.headline }}</h3>{% endif %}
                                 {% if slide.text|default('') %}<p>{{ slide.text }}</p>{% endif %}

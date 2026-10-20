@@ -1,0 +1,34 @@
+{
+  "block": "promo-text-image-hero",
+  "shopwareVersion": "6.6",
+  "category": "Text & images",
+  "customElements": [
+    "promo-text-image-hero"
+  ],
+  "resolverClasses": [],
+  "administrationImport": "import './module/sw-cms/library/promo-text-image-hero';",
+  "scssImport": "@import \"cms-library/promo-text-image-hero\";",
+  "serviceImport": null,
+  "files": [
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/promo-text-image-hero/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/promo-text-image-hero/component/sw-cms-block-promo-text-image-hero.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/promo-text-image-hero/component/sw-cms-block-promo-text-image-hero.scss",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/promo-text-image-hero/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/promo-text-image-hero/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/promo-text-image-hero/preview/sw-cms-preview-promo-text-image-hero.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/promo-text-image-hero/preview/sw-cms-preview-promo-text-image-hero.scss",
+    "src/Resources/app/administration/src/module/sw-cms/elements/promo-text-image-hero/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/promo-text-image-hero/component/sw-cms-el-promo-text-image-hero.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/promo-text-image-hero/component/sw-cms-el-promo-text-image-hero.scss",
+    "src/Resources/app/administration/src/module/sw-cms/elements/promo-text-image-hero/config/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/promo-text-image-hero/config/sw-cms-el-config-promo-text-image-hero.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/promo-text-image-hero/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/promo-text-image-hero/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/library/promo-text-image-hero/de-DE.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/promo-text-image-hero/en-GB.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/promo-text-image-hero/index.js",
+    "src/Resources/app/storefront/src/scss/cms-library/_promo-text-image-hero.scss",
+    "src/Resources/views/storefront/block/cms-block-promo-text-image-hero.html.twig",
+    "src/Resources/views/storefront/element/cms-element-promo-text-image-hero.html.twig"
+  ]
+}

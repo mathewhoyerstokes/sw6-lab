@@ -1,0 +1,15 @@
+{% block cms_block_three_image_panels %}
+    {# A dedicated grid with zero gap keeps all three cards touching; no Bootstrap column gutters between cards. #}
+    <div class="col-12">
+        <div class="three-image-panels-grid">
+            {% for index in 1..3 %}
+                {% set element = block.slots.getSlot('card-' ~ index) %}
+                <div class="three-image-panels-column"{% if element %} data-cms-element-id="{{ element.id }}"{% endif %}>
+                    {% if element %}
+                        {% sw_include '@Storefront/storefront/element/cms-element-' ~ element.type ~ '.html.twig' with { element: element } %}
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

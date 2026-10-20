@@ -1,0 +1,117 @@
+{% block cms_block_three_linked_category_image_panels %}
+    {# A dedicated grid with zero gap keeps all three cards touching; no Bootstrap column gutters between cards. #}
+    {#
+        OPTIONAL ALTERNATIVE: normal image above the text, instead of a background image.
+        This is documentation only; everything inside this Twig comment is disabled.
+
+        Keep the loop and zero-gap grid below. To use this alternative, replace the
+        sw_include inside "if element" with the markup below, or put the markup in
+        a separate CMS element template for reuse. The existing resolver already
+        supplies category.media and the category URL, so no resolver change is needed.
+
+        Use a separate card class: cms-element-image-panel applies background-image
+        styling and an overlay, which this normal image layout does not need.
+
+        {% set category = element.data.category %}
+        {% set config = element.translated.config|default(element.config) %}
+        {% if category and element.data.url %}
+            <a class="linked-category-image-card" href="{{ element.data.url }}"
+               {% if category.shouldOpenInNewTab %}target="_blank" rel="noopener noreferrer"{% endif %}>
+                {% if category.media %}
+                    {% sw_thumbnails 'linked-category-card-image' with {
+                        media: category.media,
+                        sizes: { lg: '33vw', default: '100vw' },
+                        attributes: {
+                            class: 'linked-category-image-card__image',
+                            alt: category.media.translated.alt|default(category.translated.name),
+                            loading: 'lazy'
+                        }
+                    } %}
+                {% endif %}
+                <div class="linked-category-image-card__content">
+                    <h3>{{ category.translated.name }}</h3>
+                    {% if config.text.value|default('') %}<p>{{ config.text.value }}</p>{% endif %}
+                </div>
+            </a>
+        {% endif %}
+
+        sw_thumbnails renders a normal <img> with responsive srcset attributes.
+        The whole image and text remain one link; there is no button.
+        Add these styles to the storefront SCSS only when enabling this alternative:
+
+        .linked-category-image-card {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            min-width: 0;
+            color: inherit;
+            text-decoration: none;
+        }
+        .linked-category-image-card__image {
+            display: block;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+        }
+        .linked-category-image-card__content { padding: 24px; }
+        .linked-category-image-card:focus-visible {
+            outline: 3px solid currentColor;
+            outline-offset: -3px;
+        }
+
+        No margin or gap is added between cards; padding is inside the text area.
+
+        ADMINISTRATION CHANGES FOR THE NORMAL-IMAGE VERSION
+        Paths below are relative to:
+        src/Resources/app/administration/src/module/sw-cms/
+
+        1. elements/linked-category-image-panel/component/
+           In sw-cms-el-linked-category-image-panel.html.twig, replace the
+           background style binding with a normal image above the H3 and paragraph:
+
+           <img v-if="category && category.media"
+                :src="category.media.url"
+                :alt="category.media.translated?.alt || categoryName"
+                class="linked-category-image-card__image">
+
+           Keep the category loader and categoryName computed property in index.js.
+           Remove the cardStyle binding/computed property if it is no longer used.
+           In sw-cms-el-linked-category-image-panel.scss, remove the background
+           and overlay styling and style the image and text as separate areas.
+           Use display: block; width: 100%; height: auto on the image.
+           The admin canvas should preview the card without a clickable category
+           link, so clicking it still opens the CMS editing controls.
+
+        2. elements/linked-category-image-panel/preview/index.js
+           Update the element picker preview to show an image placeholder above
+           the category heading, rather than a heading over a background.
+
+        3. blocks/text-image/three-linked-category-image-panels/preview/
+           Update sw-cms-preview-three-linked-category-image-panels.html.twig
+           and its SCSS to show three normal-image cards. Keep gap: 0.
+
+        The element config/ and registration index.js remain the same: the editor
+        still selects a category and an optional paragraph, with no image picker.
+        The block registration, three named slots and component grid also stay
+        the same. The PHP resolver already supplies the category media and URL.
+
+        After changing administration templates or styles, run from the project root:
+        docker compose exec -T web bash bin/build-administration.sh
+
+        Compile the theme for storefront SCSS changes and clear the cache for
+        storefront Twig changes when you actually enable this alternative.
+    #}
+    <div class="col-12">
+        <div class="three-image-panels-grid">
+            {% for index in 1..3 %}
+                {% set element = block.slots.getSlot('card-' ~ index) %}
+                <div class="three-image-panels-column"{% if element %} data-cms-element-id="{{ element.id }}"{% endif %}>
+                    {% if element %}
+                        {% sw_include '@Storefront/storefront/element/cms-element-' ~ element.type ~ '.html.twig' with { element: element } %}
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

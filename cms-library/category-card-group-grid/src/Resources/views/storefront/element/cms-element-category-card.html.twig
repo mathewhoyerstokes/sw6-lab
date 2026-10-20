@@ -1,0 +1,35 @@
+{% block element_category_card %}
+    {% set category = element.data.category %}
+    {% if category %}
+        {% set categoryName = category.translated.name %}
+        {% set cardContent %}
+            {% block element_category_card_image %}
+                {% if category.media %}
+                    {% sw_thumbnails 'category-card-image' with {
+                        media: category.media,
+                        sizes: { default: '80px' },
+                        attributes: {
+                            class: 'cms-element-category-card__image',
+                            alt: '',
+                            loading: 'lazy',
+                            width: '80',
+                            height: '80'
+                        }
+                    } %}
+                {% endif %}
+            {% endblock %}
+            {% block element_category_card_name %}
+                <h4 class="cms-element-category-card__name">{{ categoryName }}</h4>
+            {% endblock %}
+        {% endset %}
+        {% if element.data.url %}
+            <a class="cms-element-category-card" href="{{ element.data.url }}"
+               {% if category.shouldOpenInNewTab %}target="_blank" rel="noopener noreferrer"{% endif %}>
+                {{ cardContent }}
+            </a>
+        {% else %}
+            {# Folder categories have a name and image, but no navigable URL. #}
+            <div class="cms-element-category-card">{{ cardContent }}</div>
+        {% endif %}
+    {% endif %}
+{% endblock %}

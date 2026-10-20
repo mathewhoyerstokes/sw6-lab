@@ -1,0 +1,34 @@
+{
+  "block": "split-text-buttons",
+  "shopwareVersion": "6.6",
+  "category": "Text",
+  "customElements": [
+    "split-text-buttons"
+  ],
+  "resolverClasses": [],
+  "administrationImport": "import './module/sw-cms/library/split-text-buttons';",
+  "scssImport": "@import \"cms-library/split-text-buttons\";",
+  "serviceImport": null,
+  "files": [
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/split-text-buttons/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/split-text-buttons/component/sw-cms-block-split-text-buttons.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/split-text-buttons/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/split-text-buttons/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/split-text-buttons/preview/sw-cms-preview-split-text-buttons.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/split-text-buttons/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/split-text-buttons/component/sw-cms-el-split-text-buttons.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/split-text-buttons/component/sw-cms-el-split-text-buttons.scss",
+    "src/Resources/app/administration/src/module/sw-cms/elements/split-text-buttons/config/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/split-text-buttons/config/sw-cms-el-config-split-text-buttons.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/split-text-buttons/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/split-text-buttons/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/split-text-buttons/preview/sw-cms-el-preview-split-text-buttons.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/split-text-buttons/preview/sw-cms-el-preview-split-text-buttons.scss",
+    "src/Resources/app/administration/src/module/sw-cms/library/split-text-buttons/de-DE.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/split-text-buttons/en-GB.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/split-text-buttons/index.js",
+    "src/Resources/app/storefront/src/scss/cms-library/_split-text-buttons.scss",
+    "src/Resources/views/storefront/block/cms-block-split-text-buttons.html.twig",
+    "src/Resources/views/storefront/element/cms-element-split-text-buttons.html.twig"
+  ]
+}

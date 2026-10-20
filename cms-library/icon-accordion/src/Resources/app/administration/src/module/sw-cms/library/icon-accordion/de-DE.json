@@ -1,0 +1,18 @@
+{
+  "vierpunkt-theme": {
+    "cms": {
+      "iconAccordion": {
+        "label": "Akkordeon mit Icons",
+        "help": "Bis zu sechs Einträge. Einträge ohne Titel werden im Shop ausgeblendet. Änderungen durch Speichern des Layouts übernehmen.",
+        "item": "Eintrag",
+        "icon": "Icon-Bild (SVG, max. 40 × 40px)",
+        "title": "Titel",
+        "text": "Absatztext",
+        "up": "Nach oben",
+        "down": "Nach unten",
+        "remove": "Eintrag entfernen",
+        "add": "Eintrag hinzufügen"
+      }
+    }
+  }
+}

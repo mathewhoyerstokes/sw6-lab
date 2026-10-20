@@ -1,0 +1,38 @@
+{% block sw_cms_el_config_background_card %}
+    <div class="sw-cms-el-config-background-card">
+        <sw-media-field
+            :value="element.config.backgroundMedia.value"
+            :label="$t('vierpunkt-theme.cms.backgroundCard.backgroundMedia')"
+            file-accept="image/*"
+            @update:value="onBackgroundMediaChange"
+        />
+        <sw-colorpicker
+            color-output="hex"
+            :alpha="false"
+            :z-index="1001"
+            v-model:value="element.config.backgroundColor.value"
+            :label="$t('vierpunkt-theme.cms.contentCard.backgroundColor')"
+            @update:value="onElementUpdate"
+        />
+        <sw-text-field
+            v-model:value="element.config.headline.value"
+            :label="$t('vierpunkt-theme.cms.contentCard.headline')"
+            @update:value="onElementUpdate"
+        />
+        <sw-textarea-field
+            v-model:value="element.config.text.value"
+            :label="$t('vierpunkt-theme.cms.contentCard.text')"
+            @update:value="onElementUpdate"
+        />
+        <sw-text-field
+            v-model:value="element.config.buttonText.value"
+            :label="$t('vierpunkt-theme.cms.contentCard.buttonText')"
+            @update:value="onElementUpdate"
+        />
+        <sw-text-field
+            v-model:value="element.config.buttonUrl.value"
+            :label="$t('vierpunkt-theme.cms.contentCard.buttonUrl')"
+            @update:value="onElementUpdate"
+        />
+    </div>
+{% endblock %}

@@ -1,0 +1,22 @@
+{
+  "vierpunkt-theme": {
+    "cms": {
+      "blocks": {
+        "threeLinkedCategoryImagePanels": {
+          "label": "Drei verlinkte Kategorie-Bildkacheln"
+        }
+      },
+      "categoryCard": {
+        "category": "Kategorie",
+        "placeholder": "Kategorie auswählen"
+      },
+      "imagePanel": {
+        "subheadline": "Unterüberschrift (Absatz)"
+      },
+      "linkedCategoryImagePanel": {
+        "label": "Verlinkte Kategorie-Bildkachel",
+        "help": "Bild und H3-Überschrift stammen aus der gewählten Kategorie. Die gesamte Kachel verlinkt auf diese Kategorie."
+      }
+    }
+  }
+}

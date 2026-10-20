@@ -1,0 +1,7 @@
+{% block element_brand_logo_grid_title %}
+    {% set headline = element.translated.config.headline.value ?? '' %}
+
+    {% if headline %}
+        <h4 class="cms-element-brand-logo-grid-title">{{ headline }}</h4>
+    {% endif %}
+{% endblock %}

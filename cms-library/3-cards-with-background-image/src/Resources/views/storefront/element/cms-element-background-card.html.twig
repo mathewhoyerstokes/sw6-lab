@@ -1,0 +1,20 @@
+{% block element_background_card %}
+    {% set config = element.translated.config %}
+    {% set buttonUrl = config.buttonUrl.value|default('') %}
+    {% set safeUrl = buttonUrl starts with 'https://' or buttonUrl starts with 'http://' or (buttonUrl starts with '/' and not (buttonUrl starts with '//') and not (buttonUrl starts with '/\\')) or buttonUrl starts with '#' %}
+
+    <div class="cms-element-background-card"
+         style="background-color: {{ config.backgroundColor.value|default('#343a40') }};{% if element.data.backgroundMedia %} background-image: url('{{ element.data.backgroundMedia.url|escape('css') }}');{% endif %}">
+        {% block element_background_card_heading %}
+            {% if config.headline.value %}<h4>{{ config.headline.value }}</h4>{% endif %}
+        {% endblock %}
+        {% block element_background_card_text %}
+            {% if config.text.value %}<p>{{ config.text.value }}</p>{% endif %}
+        {% endblock %}
+        {% block element_background_card_button %}
+            {% if config.buttonText.value and safeUrl %}
+                <a class="btn btn-primary" href="{{ buttonUrl }}">{{ config.buttonText.value }}</a>
+            {% endif %}
+        {% endblock %}
+    </div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{
+  "vierpunkt-theme": {
+    "cms": {
+      "blocks": {
+        "designerProductSlider": {
+          "label": "Product slider with header"
+        }
+      },
+      "designerSliderHeader": {
+        "label": "Product slider heading",
+        "headline": "Slider headline",
+        "subheadline": "Slider subheadline"
+      }
+    }
+  }
+}

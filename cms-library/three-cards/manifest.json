@@ -1,0 +1,34 @@
+{
+  "block": "three-cards",
+  "shopwareVersion": "6.6",
+  "category": "Text",
+  "customElements": [
+    "content-card"
+  ],
+  "resolverClasses": [],
+  "administrationImport": "import './module/sw-cms/library/three-cards';",
+  "scssImport": "@import \"cms-library/three-cards\";",
+  "serviceImport": null,
+  "files": [
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/three-cards/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/three-cards/component/sw-cms-block-three-cards.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/three-cards/component/sw-cms-block-three-cards.scss",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/three-cards/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/three-cards/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/three-cards/preview/sw-cms-preview-three-cards.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/three-cards/preview/sw-cms-preview-three-cards.scss",
+    "src/Resources/app/administration/src/module/sw-cms/elements/content-card/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/content-card/component/sw-cms-el-content-card.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/content-card/component/sw-cms-el-content-card.scss",
+    "src/Resources/app/administration/src/module/sw-cms/elements/content-card/config/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/content-card/config/sw-cms-el-config-content-card.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/content-card/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/content-card/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/library/three-cards/de-DE.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/three-cards/en-GB.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/three-cards/index.js",
+    "src/Resources/app/storefront/src/scss/cms-library/_three-cards.scss",
+    "src/Resources/views/storefront/block/cms-block-three-cards.html.twig",
+    "src/Resources/views/storefront/element/cms-element-content-card.html.twig"
+  ]
+}

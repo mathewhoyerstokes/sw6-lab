@@ -1,0 +1,16 @@
+{
+  "vierpunkt-theme": {
+    "cms": {
+      "blocks": {
+        "categoryCardGroupGrid": {
+          "label": "Kategorie-Kartenraster"
+        }
+      },
+      "categoryCard": {
+        "label": "Kategoriekarte",
+        "category": "Kategorie",
+        "placeholder": "Kategorie auswählen"
+      }
+    }
+  }
+}

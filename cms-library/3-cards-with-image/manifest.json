@@ -1,0 +1,35 @@
+{
+  "block": "3-cards-with-image",
+  "shopwareVersion": "6.6",
+  "category": "Text & images",
+  "customElements": [
+    "content-card"
+  ],
+  "resolverClasses": [],
+  "administrationImport": "import './module/sw-cms/library/3-cards-with-image';",
+  "scssImport": "@import \"cms-library/3-cards-with-image\";",
+  "serviceImport": null,
+  "files": [
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/3-cards-with-image/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/3-cards-with-image/component/sw-cms-block-3-cards-with-image.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/3-cards-with-image/component/sw-cms-block-3-cards-with-image.scss",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/3-cards-with-image/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/3-cards-with-image/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/3-cards-with-image/preview/sw-cms-preview-3-cards-with-image.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/3-cards-with-image/preview/sw-cms-preview-3-cards-with-image.scss",
+    "src/Resources/app/administration/src/module/sw-cms/elements/content-card/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/content-card/component/sw-cms-el-content-card.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/content-card/component/sw-cms-el-content-card.scss",
+    "src/Resources/app/administration/src/module/sw-cms/elements/content-card/config/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/content-card/config/sw-cms-el-config-content-card.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/content-card/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/content-card/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/library/3-cards-with-image/de-DE.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/3-cards-with-image/en-GB.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/3-cards-with-image/index.js",
+    "src/Resources/app/storefront/src/scss/cms-library/_3-cards-with-image.scss",
+    "src/Resources/views/storefront/block/cms-block-3-cards-with-image.html.twig",
+    "src/Resources/views/storefront/element/cms-element-content-card-with-image.html.twig",
+    "src/Resources/views/storefront/element/cms-element-content-card.html.twig"
+  ]
+}

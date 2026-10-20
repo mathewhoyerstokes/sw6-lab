@@ -1,0 +1,4 @@
+.sw-cms-block-three-image-panels {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0;
+  .sw-cms-slot { min-width: 0; }
+}

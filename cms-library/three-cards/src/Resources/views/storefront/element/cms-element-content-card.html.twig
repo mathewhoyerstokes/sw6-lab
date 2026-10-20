@@ -1,0 +1,34 @@
+{% block element_content_card %}
+    {% set config = element.translated.config %}
+    {% set imageUrl = config.imageUrl.value|default('') %}
+    {% if config.media.value %}
+        {% set media = searchMedia([config.media.value], context.context).get(config.media.value) %}
+        {% set imageUrl = media.url|default('') %}
+    {% endif %}
+    {% set buttonUrl = config.buttonUrl.value|default('') %}
+    {% set safeUrl = buttonUrl starts with 'https://' or buttonUrl starts with 'http://' or (buttonUrl starts with '/' and not (buttonUrl starts with '//') and not (buttonUrl starts with '/\\')) or buttonUrl starts with '#' %}
+
+    <div class="cms-element-content-card"{% if config.backgroundColor.value %} style="background-color: {{ config.backgroundColor.value }};"{% endif %}>
+
+        {% block element_content_card_image %}
+            {% if imageUrl %}
+                <img class="cms-element-content-card__image"
+                     src="{{ imageUrl }}"
+                     alt="{{ config.imageAlt.value|default('') }}"
+                     loading="lazy">
+            {% endif %}
+        {% endblock %}
+
+        {% block element_content_card_heading %}
+            {% if config.headline.value %}<h4>{{ config.headline.value }}</h4>{% endif %}
+        {% endblock %}
+        {% block element_content_card_text %}
+            {% if config.text.value %}<p>{{ config.text.value }}</p>{% endif %}
+        {% endblock %}
+        {% block element_content_card_button %}
+            {% if config.buttonText.value and safeUrl %}
+                <a class="btn btn-primary" href="{{ buttonUrl }}">{{ config.buttonText.value }}</a>
+            {% endif %}
+        {% endblock %}
+    </div>
+{% endblock %}

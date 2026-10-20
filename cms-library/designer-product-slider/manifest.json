@@ -1,0 +1,32 @@
+{
+  "block": "designer-product-slider",
+  "shopwareVersion": "6.6",
+  "category": "Commerce",
+  "customElements": [
+    "designer-slider-header"
+  ],
+  "resolverClasses": [],
+  "administrationImport": "import './module/sw-cms/library/designer-product-slider';",
+  "scssImport": "@import \"cms-library/designer-product-slider\";",
+  "serviceImport": null,
+  "files": [
+    "src/Resources/app/administration/src/module/sw-cms/blocks/commerce/designer-product-slider/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/commerce/designer-product-slider/component/sw-cms-block-product-slider.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/commerce/designer-product-slider/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/commerce/designer-product-slider/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/commerce/designer-product-slider/preview/sw-cms-preview-designer-product-slider.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/designer-slider-header/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/designer-slider-header/component/sw-cms-el-designer-slider-header.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/designer-slider-header/component/sw-cms-el-designer-slider-header.scss",
+    "src/Resources/app/administration/src/module/sw-cms/elements/designer-slider-header/config/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/designer-slider-header/config/sw-cms-el-config-designer-slider-header.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/designer-slider-header/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/designer-slider-header/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/library/designer-product-slider/de-DE.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/designer-product-slider/en-GB.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/designer-product-slider/index.js",
+    "src/Resources/app/storefront/src/scss/cms-library/_designer-product-slider.scss",
+    "src/Resources/views/storefront/block/cms-block-designer-product-slider.html.twig",
+    "src/Resources/views/storefront/element/cms-element-designer-slider-header.html.twig"
+  ]
+}

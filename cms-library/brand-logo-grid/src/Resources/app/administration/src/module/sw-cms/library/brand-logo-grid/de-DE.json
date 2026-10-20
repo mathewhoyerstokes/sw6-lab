@@ -1,0 +1,14 @@
+{
+  "vierpunkt-theme": {
+    "cms": {
+      "blocks": {
+        "brandLogoGrid": {
+          "label": "Markenlogo-Raster"
+        }
+      },
+      "brandLogoGrid": {
+        "headline": "Markenname"
+      }
+    }
+  }
+}

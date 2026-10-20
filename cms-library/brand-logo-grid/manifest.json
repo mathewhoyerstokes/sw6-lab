@@ -1,0 +1,32 @@
+{
+  "block": "brand-logo-grid",
+  "shopwareVersion": "6.6",
+  "category": "Images",
+  "customElements": [
+    "brand-logo-grid-title"
+  ],
+  "resolverClasses": [],
+  "administrationImport": "import './module/sw-cms/library/brand-logo-grid';",
+  "scssImport": "@import \"cms-library/brand-logo-grid\";",
+  "serviceImport": null,
+  "files": [
+    "src/Resources/app/administration/src/module/sw-cms/blocks/image/brand-logo-grid/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/image/brand-logo-grid/component/sw-cms-block-brand-logo-grid.scss",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/image/brand-logo-grid/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/image/brand-logo-grid/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/image/brand-logo-grid/preview/sw-cms-preview-brand-logo-grid.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/image/brand-logo-grid/preview/sw-cms-preview-brand-logo-grid.scss",
+    "src/Resources/app/administration/src/module/sw-cms/elements/brand-logo-grid-title/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/brand-logo-grid-title/component/sw-cms-el-brand-logo-grid-title.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/brand-logo-grid-title/config/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/brand-logo-grid-title/config/sw-cms-el-config-brand-logo-grid-title.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/brand-logo-grid-title/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/brand-logo-grid-title/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/library/brand-logo-grid/de-DE.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/brand-logo-grid/en-GB.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/brand-logo-grid/index.js",
+    "src/Resources/app/storefront/src/scss/cms-library/_brand-logo-grid.scss",
+    "src/Resources/views/storefront/block/cms-block-brand-logo-grid.html.twig",
+    "src/Resources/views/storefront/element/cms-element-brand-logo-grid-title.html.twig"
+  ]
+}

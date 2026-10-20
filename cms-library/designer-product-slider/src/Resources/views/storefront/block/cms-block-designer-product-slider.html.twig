@@ -1,0 +1,108 @@
+{% block block_designer_product_slider %}
+    {% set title = block.slots.getSlot('sliderTitle') %}
+    {% set description = block.slots.getSlot('sliderDescription') %}
+    {% set products = block.slots.getSlot('sliderProducts') %}
+    {% set columns = 1 %}
+
+    <div class="col-12 header-section">
+        <div class="row justify-content-center text-center">
+            <div class="col-12 col-md-8">
+                {% if title %}
+                    <div class="slider-main-title" data-cms-element-id="{{ title.id }}">
+                        {% sw_include '@Storefront/storefront/element/cms-element-' ~ title.type ~ '.html.twig' with {
+                            element: title
+                        } %}
+                    </div>
+                {% endif %}
+
+                {# Legacy blocks still render until opened and saved with the new heading editor. #}
+                {% if description and (not title or title.type != 'designer-slider-header') %}
+                    <div class="slider-main-description mt-2" data-cms-element-id="{{ description.id }}">
+                        {% sw_include '@Storefront/storefront/element/cms-element-' ~ description.type ~ '.html.twig' with {
+                            element: description
+                        } %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    {% if products %}
+        {#
+            OPTIONAL EXAMPLE ONLY — hide descriptions in this slider:
+
+            Add hideDescription: true alongside element: products in the include
+            below. Twig includes inherit context, so the flag reaches the product
+            card through cms-element-product-slider.html.twig and card/box.html.twig.
+
+            Example include arguments:
+                element: products,
+                hideDescription: true
+
+            Then in component/product/card/box-standard.html.twig, replace the
+            existing description block call with:
+
+                {% if not hideDescription|default(false) %}
+                    {{ block('component_product_box_description') }}
+                {% endif %}
+
+            Both changes are needed. Other sliders do not pass the flag and keep
+            their descriptions. For different card styling, add a unique class
+            such as designer-product-slider to this wrapper and scope SCSS under
+            .designer-product-slider .product-box.box-standard. The existing
+            .product-box.box-standard styles currently affect all standard cards.
+
+            OPTIONAL: hiding other sections or adding content to this slider only:
+
+            Pass another flag alongside element: products in the include below:
+                isDesignerSlider: true
+
+            Inside our card/box-standard.html.twig override, wrap individual calls
+            to hide them only when this flag is present. For example, replace the
+            existing rating call (inside its product.ratingAverage condition) with:
+
+                {% if not isDesignerSlider|default(false) %}
+                    {{ block('component_product_box_rating') }}
+                {% endif %}
+
+            The same approach works for description, variant characteristics,
+            price or action calls. Wrap the existing call instead of adding a
+            second copy. Removing the action removes the card's buying controls.
+
+            To add a banner ABOVE the image, add this block override to our
+            card/box-standard.html.twig file:
+
+                {% block component_product_box_image %}
+                    {% if isDesignerSlider|default(false) %}
+                        <div class="designer-card-banner">Special offer</div>
+                    {% endif %}
+                    {{ parent() }}
+                {% endblock %}
+
+            Keep parent() so Shopware still renders the image and wishlist.
+            Alternatively, put conditional custom markup directly into our
+            product-info div, for example after the product-name block call:
+
+                {% if isDesignerSlider|default(false) %}
+                    <p class="designer-card-note">Exclusive selection</p>
+                {% endif %}
+
+            These example texts are static. Use a snippet for translated text,
+            a product custom field for product-specific data, or a registered
+            CMS config field when editors need to change it per slider.
+            A Twig flag alone does not create an Administration setting.
+
+            Added content must fit the fixed 460px card or its height must change.
+            A banner above the image also moves it down: update the scoped
+            .stretched-link::after height to cover that extra banner height.
+            Other sliders keep their original output because the flag is absent.
+
+            This comment does not enable any of these changes.
+        #}
+        <div class="col-12 product-slider-wrapper mt-5" data-cms-element-id="{{ products.id }}">
+            {% sw_include '@Storefront/storefront/element/cms-element-' ~ products.type ~ '.html.twig' with {
+                element: products
+            } %}
+        </div>
+    {% endif %}
+{% endblock %}

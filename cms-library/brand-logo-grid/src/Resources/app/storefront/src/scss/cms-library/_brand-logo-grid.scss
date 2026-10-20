@@ -1,0 +1,23 @@
+// Adapt this block to the new design here. Shopware supplies Bootstrap utilities and mixins.
+.cms-block-brand-logo-grid {
+    .cms-brand-logo-grid__logo {
+        width: 80px;
+        height: 80px;
+        margin-inline: auto;
+        .cms-image-container {
+            height: 80px;
+            min-height: 80px !important;
+        }
+        .cms-image-container .cms-image {
+            display: block;
+            width: 80px;
+            height: 80px;
+            min-height: 80px;
+            min-width: 80px;
+            max-width: 80px;
+            max-height: 80px;
+            object-fit: contain;
+            margin-inline: auto;
+        }
+    }
+}

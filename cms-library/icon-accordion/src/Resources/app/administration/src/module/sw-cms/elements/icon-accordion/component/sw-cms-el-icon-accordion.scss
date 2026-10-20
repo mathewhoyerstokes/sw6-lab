@@ -1,0 +1,32 @@
+.sw-cms-el-icon-accordion {
+    &__item {
+        border: 1px solid #d1d9e0;
+    }
+    &__item + &__item {
+        border-top: 0;
+    }
+    &__heading {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 18px;
+        background: #f5f7f9;
+        strong {
+            flex: 1;
+        }
+    }
+    &__icon {
+        width: 40px;
+        height: 40px;
+        max-width: 40px;
+        max-height: 40px;
+        object-fit: contain;
+        flex: 0 0 40px;
+    }
+    p {
+        padding: 18px;
+        margin: 0;
+        white-space: pre-line;
+        overflow-wrap: anywhere;
+    }
+}

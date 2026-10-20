@@ -1,0 +1,41 @@
+{
+  "block": "information-card-slider",
+  "shopwareVersion": "6.6",
+  "category": "Text & images",
+  "customElements": [
+    "information-card-slider"
+  ],
+  "resolverClasses": [
+    "InformationCardSliderCmsElementResolver"
+  ],
+  "administrationImport": "import './module/sw-cms/library/information-card-slider';",
+  "scssImport": "@import \"cms-library/information-card-slider\";",
+  "serviceImport": "cms-library/information-card-slider.xml",
+  "files": [
+    "src/Cms/InformationCardSliderCmsElementResolver.php",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/information-card-slider/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/information-card-slider/component/sw-cms-block-information-card-slider.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/information-card-slider/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/information-card-slider/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/information-card-slider/preview/sw-cms-preview-information-card-slider.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/information-card-slider/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/information-card-slider/component/sw-cms-el-information-card-slider.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/information-card-slider/component/sw-cms-el-information-card-slider.scss",
+    "src/Resources/app/administration/src/module/sw-cms/elements/information-card-slider/config/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/information-card-slider/config/sw-cms-el-config-information-card-slider.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/information-card-slider/config/sw-cms-el-config-information-card-slider.scss",
+    "src/Resources/app/administration/src/module/sw-cms/elements/information-card-slider/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/information-card-slider/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/information-card-slider/preview/sw-cms-el-preview-information-card-slider.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/information-card-slider/preview/sw-cms-el-preview-information-card-slider.scss",
+    "src/Resources/app/administration/src/module/sw-cms/library/information-card-slider/de-DE.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/information-card-slider/en-GB.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/information-card-slider/index.js",
+    "src/Resources/app/storefront/src/scss/cms-library/_information-card-slider.scss",
+    "src/Resources/config/cms-library/information-card-slider.xml",
+    "src/Resources/snippet/information-card-slider.storefront.de-DE.json",
+    "src/Resources/snippet/information-card-slider.storefront.en-GB.json",
+    "src/Resources/views/storefront/block/cms-block-information-card-slider.html.twig",
+    "src/Resources/views/storefront/element/cms-element-information-card-slider.html.twig"
+  ]
+}

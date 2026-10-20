@@ -13,7 +13,7 @@ use Shopware\Core\Framework\Struct\ArrayStruct;
 use Shopware\Core\Framework\Uuid\Uuid;
 
 /** Resolves the media IDs saved by the slide editor to full media entities, including thumbnails.
- * All six slides are loaded in one query. Missing/deleted images are skipped in the storefront.
+ * Images are optional; missing/deleted media does not hide a card.
  */
 class InformationCardSliderCmsElementResolver extends AbstractCmsElementResolver
 {
@@ -39,7 +39,6 @@ class InformationCardSliderCmsElementResolver extends AbstractCmsElementResolver
         foreach ($this->slides($slot) as $slide) {
             $id = $slide['mediaId'] ?? null;
             $image = \is_string($id) && Uuid::isValid($id) ? $media?->get($id) : null;
-            if (!$image) continue;
             $slide['media'] = $image;
             $slides[] = $slide;
         }

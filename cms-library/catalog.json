@@ -1,0 +1,302 @@
+[
+  {
+    "name": "3-cards-with-background-image",
+    "category": "text",
+    "blockDirectory": "Resources/app/administration/src/module/sw-cms/blocks/text/3-cards-with-background-image",
+    "customElements": [
+      "background-card"
+    ],
+    "resolverClasses": [
+      "BackgroundCardCmsElementResolver"
+    ],
+    "templates": [
+      "Resources/views/storefront/block/cms-block-3-cards-with-background-image.html.twig",
+      "Resources/views/storefront/element/cms-element-background-card.html.twig"
+    ],
+    "style": "Resources/app/storefront/src/scss/cms-library/_3-cards-with-background-image.scss"
+  },
+  {
+    "name": "3-cards-with-image",
+    "category": "text-image",
+    "blockDirectory": "Resources/app/administration/src/module/sw-cms/blocks/text-image/3-cards-with-image",
+    "customElements": [
+      "content-card"
+    ],
+    "resolverClasses": [],
+    "templates": [
+      "Resources/views/storefront/block/cms-block-3-cards-with-image.html.twig",
+      "Resources/views/storefront/element/cms-element-content-card-with-image.html.twig",
+      "Resources/views/storefront/element/cms-element-content-card.html.twig"
+    ],
+    "style": "Resources/app/storefront/src/scss/cms-library/_3-cards-with-image.scss"
+  },
+  {
+    "name": "brand-logo-grid",
+    "category": "image",
+    "blockDirectory": "Resources/app/administration/src/module/sw-cms/blocks/image/brand-logo-grid",
+    "customElements": [
+      "brand-logo-grid-title"
+    ],
+    "resolverClasses": [],
+    "templates": [
+      "Resources/views/storefront/block/cms-block-brand-logo-grid.html.twig",
+      "Resources/views/storefront/element/cms-element-brand-logo-grid-title.html.twig"
+    ],
+    "style": "Resources/app/storefront/src/scss/cms-library/_brand-logo-grid.scss"
+  },
+  {
+    "name": "category-background-card-group-grid",
+    "category": "image",
+    "blockDirectory": "Resources/app/administration/src/module/sw-cms/blocks/image/category-background-card-group-grid",
+    "customElements": [
+      "category-background-card"
+    ],
+    "resolverClasses": [
+      "CategoryBackgroundCardCmsElementResolver",
+      "CategoryCardCmsElementResolver"
+    ],
+    "templates": [
+      "Resources/views/storefront/block/cms-block-category-background-card-group-grid.html.twig",
+      "Resources/views/storefront/element/cms-element-category-background-card.html.twig"
+    ],
+    "style": "Resources/app/storefront/src/scss/cms-library/_category-background-card-group-grid.scss"
+  },
+  {
+    "name": "category-card-group-grid",
+    "category": "image",
+    "blockDirectory": "Resources/app/administration/src/module/sw-cms/blocks/image/category-card-group-grid",
+    "customElements": [
+      "category-card"
+    ],
+    "resolverClasses": [
+      "CategoryCardCmsElementResolver"
+    ],
+    "templates": [
+      "Resources/views/storefront/block/cms-block-category-card-group-grid.html.twig",
+      "Resources/views/storefront/element/cms-element-category-card.html.twig"
+    ],
+    "style": "Resources/app/storefront/src/scss/cms-library/_category-card-group-grid.scss"
+  },
+  {
+    "name": "designer-product-slider",
+    "category": "commerce",
+    "blockDirectory": "Resources/app/administration/src/module/sw-cms/blocks/commerce/designer-product-slider",
+    "customElements": [
+      "designer-slider-header"
+    ],
+    "resolverClasses": [],
+    "templates": [
+      "Resources/views/storefront/block/cms-block-designer-product-slider.html.twig",
+      "Resources/views/storefront/element/cms-element-designer-slider-header.html.twig"
+    ],
+    "style": "Resources/app/storefront/src/scss/cms-library/_designer-product-slider.scss"
+  },
+  {
+    "name": "four-cards",
+    "category": "text",
+    "blockDirectory": "Resources/app/administration/src/module/sw-cms/blocks/text/four-cards",
+    "customElements": [
+      "content-card"
+    ],
+    "resolverClasses": [],
+    "templates": [
+      "Resources/views/storefront/block/cms-block-four-cards.html.twig",
+      "Resources/views/storefront/element/cms-element-content-card.html.twig"
+    ],
+    "style": "Resources/app/storefront/src/scss/cms-library/_four-cards.scss"
+  },
+  {
+    "name": "four-cards-stacked",
+    "category": "text",
+    "blockDirectory": "Resources/app/administration/src/module/sw-cms/blocks/text/4-cards-stacked",
+    "customElements": [
+      "content-card"
+    ],
+    "resolverClasses": [],
+    "templates": [
+      "Resources/views/storefront/block/cms-block-four-cards-stacked.html.twig",
+      "Resources/views/storefront/element/cms-element-content-card.html.twig"
+    ],
+    "style": "Resources/app/storefront/src/scss/base/_base.scss",
+    "styleSelector": ".cms-block-four-cards-stacked"
+  },
+  {
+    "name": "hero-card-slider",
+    "category": "text-image",
+    "blockDirectory": "Resources/app/administration/src/module/sw-cms/blocks/text-image/hero-card-slider",
+    "customElements": [
+      "hero-card-slider"
+    ],
+    "resolverClasses": [
+      "HeroCardSliderCmsElementResolver"
+    ],
+    "templates": [
+      "Resources/views/storefront/block/cms-block-hero-card-slider.html.twig",
+      "Resources/views/storefront/element/cms-element-hero-card-slider.html.twig"
+    ],
+    "style": "Resources/app/storefront/src/scss/cms-library/_hero-card-slider.scss"
+  },
+  {
+    "name": "hero-newsletter",
+    "category": "form",
+    "blockDirectory": "Resources/app/administration/src/module/sw-cms/blocks/text-image/hero-newsletter",
+    "customElements": [],
+    "resolverClasses": [],
+    "templates": [
+      "Resources/views/storefront/block/cms-block-hero-newsletter.html.twig",
+      "Resources/views/storefront/element/hero-newsletter-signup.html.twig"
+    ],
+    "style": "Resources/app/storefront/src/scss/cms-library/_hero-newsletter.scss"
+  },
+  {
+    "name": "icon-accordion",
+    "category": "text",
+    "blockDirectory": "Resources/app/administration/src/module/sw-cms/blocks/text/icon-accordion",
+    "customElements": [
+      "icon-accordion"
+    ],
+    "resolverClasses": [
+      "IconAccordionCmsElementResolver"
+    ],
+    "templates": [
+      "Resources/views/storefront/block/cms-block-icon-accordion.html.twig",
+      "Resources/views/storefront/element/cms-element-icon-accordion.html.twig"
+    ],
+    "style": "Resources/app/storefront/src/scss/components/_icon-accordion.scss"
+  },
+  {
+    "name": "information-card-slider",
+    "category": "text-image",
+    "blockDirectory": "Resources/app/administration/src/module/sw-cms/blocks/text-image/information-card-slider",
+    "customElements": [
+      "information-card-slider"
+    ],
+    "resolverClasses": [
+      "InformationCardSliderCmsElementResolver"
+    ],
+    "templates": [
+      "Resources/views/storefront/block/cms-block-information-card-slider.html.twig",
+      "Resources/views/storefront/element/cms-element-information-card-slider.html.twig"
+    ],
+    "style": "Resources/app/storefront/src/scss/cms-library/_information-card-slider.scss"
+  },
+  {
+    "name": "masonry-grid",
+    "category": "image",
+    "blockDirectory": "Resources/app/administration/src/module/sw-cms/blocks/image/masonry-grid",
+    "customElements": [
+      "masonry-grid-title"
+    ],
+    "resolverClasses": [],
+    "templates": [
+      "Resources/views/storefront/block/cms-block-masonry-grid.html.twig",
+      "Resources/views/storefront/element/cms-element-masonry-grid-title.html.twig"
+    ],
+    "style": "Resources/app/storefront/src/scss/cms-library/_masonry-grid.scss"
+  },
+  {
+    "name": "promo-image-text-hero",
+    "category": "text-image",
+    "blockDirectory": "Resources/app/administration/src/module/sw-cms/blocks/text-image/promo-image-text-hero",
+    "customElements": [
+      "promo-image-text-hero"
+    ],
+    "resolverClasses": [],
+    "templates": [
+      "Resources/views/storefront/block/cms-block-promo-image-text-hero.html.twig",
+      "Resources/views/storefront/element/cms-element-promo-image-text-hero.html.twig"
+    ],
+    "style": "Resources/app/storefront/src/scss/cms-library/_promo-image-text-hero.scss"
+  },
+  {
+    "name": "promo-switcher-text-image-hero",
+    "category": "text-image",
+    "blockDirectory": "Resources/app/administration/src/module/sw-cms/blocks/text-image/promo-switcher-text-image-hero",
+    "customElements": [
+      "promo-switcher-text-image-hero"
+    ],
+    "resolverClasses": [],
+    "templates": [
+      "Resources/views/storefront/block/cms-block-promo-switcher-text-image-hero.html.twig",
+      "Resources/views/storefront/element/cms-element-promo-image-text-hero.html.twig",
+      "Resources/views/storefront/element/cms-element-promo-switcher-text-image-hero.html.twig"
+    ],
+    "style": "Resources/app/storefront/src/scss/cms-library/_promo-switcher-text-image-hero.scss"
+  },
+  {
+    "name": "promo-text-image-hero",
+    "category": "text-image",
+    "blockDirectory": "Resources/app/administration/src/module/sw-cms/blocks/text-image/promo-text-image-hero",
+    "customElements": [
+      "promo-text-image-hero"
+    ],
+    "resolverClasses": [],
+    "templates": [
+      "Resources/views/storefront/block/cms-block-promo-text-image-hero.html.twig",
+      "Resources/views/storefront/element/cms-element-promo-text-image-hero.html.twig"
+    ],
+    "style": "Resources/app/storefront/src/scss/cms-library/_promo-text-image-hero.scss"
+  },
+  {
+    "name": "split-text-buttons",
+    "category": "text",
+    "blockDirectory": "Resources/app/administration/src/module/sw-cms/blocks/text/split-text-buttons",
+    "customElements": [
+      "split-text-buttons"
+    ],
+    "resolverClasses": [],
+    "templates": [
+      "Resources/views/storefront/block/cms-block-split-text-buttons.html.twig",
+      "Resources/views/storefront/element/cms-element-split-text-buttons.html.twig"
+    ],
+    "style": "Resources/app/storefront/src/scss/cms-library/_split-text-buttons.scss"
+  },
+  {
+    "name": "three-cards",
+    "category": "text",
+    "blockDirectory": "Resources/app/administration/src/module/sw-cms/blocks/text/three-cards",
+    "customElements": [
+      "content-card"
+    ],
+    "resolverClasses": [],
+    "templates": [
+      "Resources/views/storefront/block/cms-block-three-cards.html.twig",
+      "Resources/views/storefront/element/cms-element-content-card.html.twig"
+    ],
+    "style": "Resources/app/storefront/src/scss/cms-library/_three-cards.scss"
+  },
+  {
+    "name": "three-image-panels",
+    "category": "text-image",
+    "blockDirectory": "Resources/app/administration/src/module/sw-cms/blocks/text-image/three-image-panels",
+    "customElements": [
+      "image-panel"
+    ],
+    "resolverClasses": [
+      "BackgroundCardCmsElementResolver",
+      "ImagePanelCmsElementResolver"
+    ],
+    "templates": [
+      "Resources/views/storefront/block/cms-block-three-image-panels.html.twig",
+      "Resources/views/storefront/element/cms-element-image-panel.html.twig"
+    ],
+    "style": "Resources/app/storefront/src/scss/cms-library/_three-image-panels.scss"
+  },
+  {
+    "name": "three-linked-category-image-panels",
+    "category": "text-image",
+    "blockDirectory": "Resources/app/administration/src/module/sw-cms/blocks/text-image/three-linked-category-image-panels",
+    "customElements": [
+      "linked-category-image-panel"
+    ],
+    "resolverClasses": [
+      "CategoryCardCmsElementResolver",
+      "LinkedCategoryImagePanelCmsElementResolver"
+    ],
+    "templates": [
+      "Resources/views/storefront/block/cms-block-three-linked-category-image-panels.html.twig",
+      "Resources/views/storefront/element/cms-element-linked-category-image-panel.html.twig"
+    ],
+    "style": "Resources/app/storefront/src/scss/cms-library/_three-linked-category-image-panels.scss"
+  }
+]

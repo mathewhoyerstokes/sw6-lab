@@ -1,0 +1,20 @@
+{
+  "vierpunkt-theme": {
+    "cms": {
+      "blocks": {
+        "fourCardsStacked": {
+          "label": "Vier Karten (2 × 2)"
+        }
+      },
+      "contentCard": {
+        "label": "Inhaltskarte",
+        "backgroundColor": "Hintergrundfarbe",
+        "headline": "Überschrift",
+        "text": "Text",
+        "buttonText": "Button-Beschriftung",
+        "buttonUrl": "Button-Link",
+        "imageAlt": "Alternativtext für das Bild"
+      }
+    }
+  }
+}

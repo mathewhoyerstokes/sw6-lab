@@ -1,0 +1,34 @@
+{
+  "block": "four-cards-stacked",
+  "shopwareVersion": "6.6",
+  "category": "Text",
+  "customElements": [
+    "content-card"
+  ],
+  "resolverClasses": [],
+  "administrationImport": "import './module/sw-cms/library/four-cards-stacked';",
+  "scssImport": "@import \"cms-library/four-cards-stacked\";",
+  "serviceImport": null,
+  "files": [
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/4-cards-stacked/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/4-cards-stacked/component/sw-cms-block-four-cards-stacked.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/4-cards-stacked/component/sw-cms-block-four-cards-stacked.scss",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/4-cards-stacked/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/4-cards-stacked/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/4-cards-stacked/preview/sw-cms-preview-four-cards-stacked.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/4-cards-stacked/preview/sw-cms-preview-four-cards-stacked.scss",
+    "src/Resources/app/administration/src/module/sw-cms/elements/content-card/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/content-card/component/sw-cms-el-content-card.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/content-card/component/sw-cms-el-content-card.scss",
+    "src/Resources/app/administration/src/module/sw-cms/elements/content-card/config/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/content-card/config/sw-cms-el-config-content-card.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/content-card/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/content-card/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/library/four-cards-stacked/de-DE.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/four-cards-stacked/en-GB.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/four-cards-stacked/index.js",
+    "src/Resources/app/storefront/src/scss/cms-library/_four-cards-stacked.scss",
+    "src/Resources/views/storefront/block/cms-block-four-cards-stacked.html.twig",
+    "src/Resources/views/storefront/element/cms-element-content-card.html.twig"
+  ]
+}

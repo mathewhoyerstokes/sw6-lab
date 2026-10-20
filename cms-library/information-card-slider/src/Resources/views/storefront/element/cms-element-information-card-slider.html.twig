@@ -1,0 +1,52 @@
+{% block element_information_card_slider %}
+    {% set slides = element.data.slides|default([]) %}
+    {% if slides|length %}
+        {# Standard Shopware slider: one card on mobile, two on tablet, three on desktop.
+           No automatic rotation, so visitors can read the information at their own pace. #}
+        {% set sliderOptions = { slider: {
+            items: 1, gutter: 24, slideBy: 1, mouseDrag: true,
+            nav: true, navPosition: 'bottom', controls: true,
+            autoplay: false, loop: false, rewind: false, speed: 400,
+            responsive: { md: { items: 2 }, lg: { items: 3 }, xl: { items: 3 }, xxl: { items: 3 } }
+        } } %}
+        <section class="cms-element-information-card-slider base-slider"
+                 data-base-slider="true"
+                 data-base-slider-options="{{ sliderOptions|json_encode|escape('html_attr') }}"
+                 aria-label="{{ 'shopwareDesignSystem.informationCardSlider.label'|trans|striptags }}">
+            <div data-base-slider-container="true">
+                {% for slide in slides %}
+                    <div class="information-card-slider-slide">
+                        <article class="information-card-slider-card">
+                            {% if slide.media %}
+                                {% sw_thumbnails 'information-card-slider-image' with {
+                                    media: slide.media,
+                                    sizes: { xs: '100vw', md: '50vw', lg: '33vw' },
+                                    attributes: {
+                                        class: 'information-card-slider-image',
+                                        alt: slide.media.translated.alt|default(''), loading: 'lazy'
+                                    }
+                                } %}
+                            {% endif %}
+                            <div class="information-card-slider-content">
+                                {% if slide.headline|default('') %}<h3>{{ slide.headline }}</h3>{% endif %}
+                                {% if slide.text|default('') %}<p>{{ slide.text }}</p>{% endif %}
+                                <div class="information-card-slider-buttons">
+                                    {% if slide.buttonText|default('') and slide.buttonUrl|default('') matches '~^(https?://|/(?!/)|#|mailto:|tel:)~i' %}
+                                        <a class="btn btn-primary" href="{{ slide.buttonUrl|sw_encode_url }}">{{ slide.buttonText }}</a>
+                                    {% endif %}
+                                    {% if slide.secondaryButtonText|default('') and slide.secondaryButtonUrl|default('') matches '~^(https?://|/(?!/)|#|mailto:|tel:)~i' %}
+                                        <a class="btn btn-outline-primary" href="{{ slide.secondaryButtonUrl|sw_encode_url }}">{{ slide.secondaryButtonText }}</a>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="information-card-slider-controls" data-base-slider-controls="true">
+                <button class="btn btn-outline-primary" type="button" aria-label="{{ 'general.previous'|trans|striptags }}">{% sw_icon 'arrow-head-left' %}</button>
+                <button class="btn btn-outline-primary" type="button" aria-label="{{ 'general.next'|trans|striptags }}">{% sw_icon 'arrow-head-right' %}</button>
+            </div>
+        </section>
+    {% endif %}
+{% endblock %}

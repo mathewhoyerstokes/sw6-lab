@@ -3,7 +3,7 @@
     "cms": {
       "informationCardSlider": {
         "label": "Infokarten-Slider",
-        "help": "Bis zu sechs Infokarten bearbeiten. Jede Karte hat ein Bild, eine H3-Überschrift, einen Absatz und zwei optionale Links. Karten ohne Bild werden ausgeblendet. Zum Speichern das Layout sichern.",
+        "help": "Bis zu sechs Infokarten mit optionalem Bild, H3-Überschrift, Absatz und zwei optionalen Links bearbeiten. Karten werden auch ohne Bild angezeigt. Zum Speichern das Layout sichern.",
         "slide": "Karte",
         "image": "Kartenbild",
         "headline": "Überschrift (H3)",

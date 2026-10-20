@@ -1,0 +1,32 @@
+// Adapt this block to the new design here. Shopware supplies Bootstrap utilities and mixins.
+.cms-block-3-cards-with-image {
+    .cms-block-container-row {
+        row-gap: 24px;
+    }
+}
+.cms-block-3-cards-with-image .cms-element-content-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 24px;
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+    h4 {
+        margin-bottom: 16px;
+    }
+    p {
+        margin-bottom: 24px;
+        white-space: pre-line;
+    }
+    .btn {
+        align-self: flex-start;
+        margin-top: auto;
+    }
+}
+.cms-block-3-cards-with-image {
+    .cms-content-card-image {
+        margin-bottom: 24px;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+}

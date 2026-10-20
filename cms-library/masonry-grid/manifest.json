@@ -1,0 +1,32 @@
+{
+  "block": "masonry-grid",
+  "shopwareVersion": "6.6",
+  "category": "Images",
+  "customElements": [
+    "masonry-grid-title"
+  ],
+  "resolverClasses": [],
+  "administrationImport": "import './module/sw-cms/library/masonry-grid';",
+  "scssImport": "@import \"cms-library/masonry-grid\";",
+  "serviceImport": null,
+  "files": [
+    "src/Resources/app/administration/src/module/sw-cms/blocks/image/masonry-grid/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/image/masonry-grid/component/sw-cms-block-masonry-grid.scss",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/image/masonry-grid/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/image/masonry-grid/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/image/masonry-grid/preview/sw-cms-preview-block-masonry-grid.scss",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/image/masonry-grid/preview/sw-cms-preview-masonry-grid.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/masonry-grid-title/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/masonry-grid-title/component/sw-cms-el-masonry-grid-title.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/masonry-grid-title/config/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/masonry-grid-title/config/sw-cms-el-config-masonry-grid-title.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/masonry-grid-title/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/masonry-grid-title/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/library/masonry-grid/de-DE.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/masonry-grid/en-GB.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/masonry-grid/index.js",
+    "src/Resources/app/storefront/src/scss/cms-library/_masonry-grid.scss",
+    "src/Resources/views/storefront/block/cms-block-masonry-grid.html.twig",
+    "src/Resources/views/storefront/element/cms-element-masonry-grid-title.html.twig"
+  ]
+}

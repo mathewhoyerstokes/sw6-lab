@@ -1,0 +1,42 @@
+{
+  "block": "category-background-card-group-grid",
+  "shopwareVersion": "6.6",
+  "category": "Images",
+  "customElements": [
+    "category-background-card"
+  ],
+  "resolverClasses": [
+    "CategoryBackgroundCardCmsElementResolver",
+    "CategoryCardCmsElementResolver"
+  ],
+  "administrationImport": "import './module/sw-cms/library/category-background-card-group-grid';",
+  "scssImport": "@import \"cms-library/category-background-card-group-grid\";",
+  "serviceImport": "cms-library/category-background-card-group-grid.xml",
+  "files": [
+    "src/Cms/CategoryBackgroundCardCmsElementResolver.php",
+    "src/Cms/CategoryCardCmsElementResolver.php",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/image/category-background-card-group-grid/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/image/category-background-card-group-grid/component/sw-cms-block-category-background-card-group-grid.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/image/category-background-card-group-grid/component/sw-cms-block-category-background-card-group-grid.scss",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/image/category-background-card-group-grid/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/image/category-background-card-group-grid/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/image/category-background-card-group-grid/preview/sw-cms-preview-category-background-card-group-grid.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/image/category-background-card-group-grid/preview/sw-cms-preview-category-background-card-group-grid.scss",
+    "src/Resources/app/administration/src/module/sw-cms/elements/category-background-card/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/category-background-card/component/sw-cms-el-category-background-card.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/category-background-card/component/sw-cms-el-category-background-card.scss",
+    "src/Resources/app/administration/src/module/sw-cms/elements/category-background-card/config/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/category-background-card/config/sw-cms-el-config-category-background-card.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/category-background-card/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/category-background-card/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/library/category-background-card-group-grid/de-DE.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/category-background-card-group-grid/en-GB.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/category-background-card-group-grid/index.js",
+    "src/Resources/app/storefront/src/scss/cms-library/_category-background-card-group-grid.scss",
+    "src/Resources/config/cms-library/category-background-card-group-grid.xml",
+    "src/Resources/snippet/category-background-card-group-grid.storefront.de-DE.json",
+    "src/Resources/snippet/category-background-card-group-grid.storefront.en-GB.json",
+    "src/Resources/views/storefront/block/cms-block-category-background-card-group-grid.html.twig",
+    "src/Resources/views/storefront/element/cms-element-category-background-card.html.twig"
+  ]
+}

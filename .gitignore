@@ -1,6 +1,7 @@
 /.idea
 /vendor/
 /custom/plugins/SwagPayPal/
+__pycache__/
 
 ###> shopware/core ###
 .env.local

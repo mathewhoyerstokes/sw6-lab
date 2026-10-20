@@ -1,0 +1,21 @@
+{% block element_image_panel %}
+    {# Each slot has its own editable image, H3, paragraph and button. Media comes from ImagePanelCmsElementResolver. #}
+    {% set config = element.translated.config|default(element.config) %}
+    {% set buttonUrl = config.buttonUrl.value|default('') %}
+    {% set safeUrl = buttonUrl starts with 'https://' or buttonUrl starts with 'http://' or (buttonUrl starts with '/' and not (buttonUrl starts with '//') and not (buttonUrl starts with '/\\')) or buttonUrl starts with '#' %}
+
+    <div class="cms-element-image-panel"
+         style="background-color: {{ config.backgroundColor.value|default('#343a40') }};{% if element.data.backgroundMedia %} background-image: url('{{ element.data.backgroundMedia.url|escape('css') }}');{% endif %}">
+        {% block element_image_panel_heading %}
+            {% if config.headline.value %}<h3>{{ config.headline.value }}</h3>{% endif %}
+        {% endblock %}
+        {% block element_image_panel_text %}
+            {% if config.text.value %}<p>{{ config.text.value }}</p>{% endif %}
+        {% endblock %}
+        {% block element_image_panel_button %}
+            {% if config.buttonText.value and safeUrl %}
+                <a class="btn btn-primary" href="{{ buttonUrl }}">{{ config.buttonText.value }}</a>
+            {% endif %}
+        {% endblock %}
+    </div>
+{% endblock %}

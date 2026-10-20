@@ -1,0 +1,39 @@
+{
+  "block": "icon-accordion",
+  "shopwareVersion": "6.6",
+  "category": "Text",
+  "customElements": [
+    "icon-accordion"
+  ],
+  "resolverClasses": [
+    "IconAccordionCmsElementResolver"
+  ],
+  "administrationImport": "import './module/sw-cms/library/icon-accordion';",
+  "scssImport": "@import \"cms-library/icon-accordion\";",
+  "serviceImport": "cms-library/icon-accordion.xml",
+  "files": [
+    "src/Cms/IconAccordionCmsElementResolver.php",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/icon-accordion/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/icon-accordion/component/sw-cms-block-icon-accordion.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/icon-accordion/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/icon-accordion/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/icon-accordion/preview/sw-cms-preview-icon-accordion.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/icon-accordion/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/icon-accordion/component/sw-cms-el-icon-accordion.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/icon-accordion/component/sw-cms-el-icon-accordion.scss",
+    "src/Resources/app/administration/src/module/sw-cms/elements/icon-accordion/config/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/icon-accordion/config/sw-cms-el-config-icon-accordion.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/icon-accordion/config/sw-cms-el-config-icon-accordion.scss",
+    "src/Resources/app/administration/src/module/sw-cms/elements/icon-accordion/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/icon-accordion/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/icon-accordion/preview/sw-cms-el-preview-icon-accordion.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/icon-accordion/preview/sw-cms-el-preview-icon-accordion.scss",
+    "src/Resources/app/administration/src/module/sw-cms/library/icon-accordion/de-DE.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/icon-accordion/en-GB.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/icon-accordion/index.js",
+    "src/Resources/app/storefront/src/scss/cms-library/_icon-accordion.scss",
+    "src/Resources/config/cms-library/icon-accordion.xml",
+    "src/Resources/views/storefront/block/cms-block-icon-accordion.html.twig",
+    "src/Resources/views/storefront/element/cms-element-icon-accordion.html.twig"
+  ]
+}

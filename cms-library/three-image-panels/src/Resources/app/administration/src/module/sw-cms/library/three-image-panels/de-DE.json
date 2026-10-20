@@ -1,0 +1,24 @@
+{
+  "vierpunkt-theme": {
+    "cms": {
+      "blocks": {
+        "threeImagePanels": {
+          "label": "Drei Bild-Kacheln (ohne Abstand)"
+        }
+      },
+      "contentCard": {
+        "headline": "Überschrift",
+        "text": "Text",
+        "buttonText": "Button-Beschriftung",
+        "buttonUrl": "Button-Link"
+      },
+      "backgroundCard": {
+        "backgroundMedia": "Hintergrundbild"
+      },
+      "imagePanel": {
+        "label": "Bild-Kachel",
+        "subheadline": "Unterüberschrift (Absatz)"
+      }
+    }
+  }
+}

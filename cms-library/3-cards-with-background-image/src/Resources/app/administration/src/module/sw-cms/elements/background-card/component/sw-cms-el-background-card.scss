@@ -1,0 +1,39 @@
+.sw-cms-el-background-card {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 320px;
+    padding: 24px;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    overflow-wrap: anywhere;
+    // A subtle dark overlay keeps the text readable above the background image.
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        border-radius: inherit;
+        background: rgba(0, 0, 0, 0.25);
+    }
+    h4 {
+        color: inherit;
+        margin: 0 0 16px;
+    }
+    p {
+        margin: 0 0 24px;
+        white-space: pre-line;
+    }
+    &__button {
+        align-self: flex-start;
+        margin-top: auto;
+        padding: 10px 16px;
+        border-radius: 4px;
+        background: #189eff;
+        color: #fff;
+    }
+}

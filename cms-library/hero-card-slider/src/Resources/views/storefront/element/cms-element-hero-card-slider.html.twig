@@ -1,0 +1,60 @@
+{% block element_hero_card_slider %}
+    {# The resolver supplies media entities alongside the saved heading/button fields.
+       No image means no slide; only complete label/URL pairs produce buttons.
+       Use a full-width section on the homepage for an edge-to-edge hero. #}
+    {% set slides = element.data.slides|default([]) %}
+    {% if slides|length %}
+        {# Automatic rotation every 6000ms; no pause/play button is generated. #}
+        {% set sliderOptions = { slider: {
+            items: 1, gutter: 0, nav: slides|length > 1, navPosition: 'bottom',
+            controls: slides|length > 1, mouseDrag: true,
+            autoplay: slides|length > 1, autoplayTimeout: 6000,
+            autoplayHoverPause: false, autoplayButtonOutput: false,
+            ariaLive: slides|length == 1, speed: 400, autoHeight: true, loop: false, rewind: true
+        } } %}
+        <div class="cms-element-hero-card-slider base-slider"
+             data-base-slider="true"
+             data-base-slider-options="{{ sliderOptions|json_encode|escape('html_attr') }}"
+             role="region" aria-label="{{ 'shopwareDesignSystem.heroCardSlider.label'|trans|striptags }}">
+            <div data-base-slider-container="true">
+                {% for slide in slides %}
+                    <div class="hero-card-slider-slide">
+                        <article class="hero-card-slider-card">
+                            {# An absolutely positioned image behaves as a cover background while retaining responsive thumbnails. #}
+                            {% sw_thumbnails 'hero-card-slider-image' with {
+                                media: slide.media,
+                                sizes: { default: '100vw' },
+                                attributes: {
+                                    class: 'hero-card-slider-image', alt: '',
+                                    loading: loop.first ? 'eager' : 'lazy',
+                                    fetchpriority: loop.first ? 'high' : 'auto'
+                                }
+                            } %}
+                            <div class="container hero-card-slider-content">
+                                <div class="hero-card-slider-copy">
+                                    {% if slide.headline|default('') %}<h1>{{ slide.headline }}</h1>{% endif %}
+                                    {% if slide.subheadline|default('') %}<h4>{{ slide.subheadline }}</h4>{% endif %}
+                                    <div class="hero-card-slider-buttons">
+                                        {# Allow web, root-relative, anchor, email and telephone links; all text stays escaped. #}
+                                        {% if slide.buttonText|default('') and slide.buttonUrl|default('') matches '~^(https?://|/(?!/)|#|mailto:|tel:)~i' %}
+                                            <a class="btn btn-primary" href="{{ slide.buttonUrl|sw_encode_url }}">{{ slide.buttonText }}</a>
+                                        {% endif %}
+                                        {% if slide.secondaryButtonText|default('') and slide.secondaryButtonUrl|default('') matches '~^(https?://|/(?!/)|#|mailto:|tel:)~i' %}
+                                            <a class="btn btn-outline-light" href="{{ slide.secondaryButtonUrl|sw_encode_url }}">{{ slide.secondaryButtonText }}</a>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                {% endfor %}
+            </div>
+            {% if slides|length > 1 %}
+                <div class="hero-card-slider-controls" data-base-slider-controls="true">
+                    <button type="button" aria-label="{{ 'general.previous'|trans|striptags }}">{% sw_icon 'arrow-head-left' %}</button>
+                    <button type="button" aria-label="{{ 'general.next'|trans|striptags }}">{% sw_icon 'arrow-head-right' %}</button>
+                </div>
+            {% endif %}
+        </div>
+    {% endif %}
+{% endblock %}

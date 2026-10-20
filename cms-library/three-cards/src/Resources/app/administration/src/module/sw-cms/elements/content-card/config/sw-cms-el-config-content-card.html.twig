@@ -1,0 +1,62 @@
+{% block sw_cms_el_config_content_card %}
+    <div class="sw-cms-el-config-content-card">
+
+        <sw-media-upload-v2
+            variant="regular"
+            :upload-tag="uploadTag"
+            :source="previewSource"
+            :allow-multi-select="false"
+            default-folder="cms_page"
+            :caption="$tc('sw-cms.elements.general.config.caption.mediaUpload')"
+            @media-upload-sidebar-open="mediaModalIsOpen = true"
+            @media-upload-remove-image="setMedia()"
+        />
+        <sw-upload-listener
+            :upload-tag="uploadTag"
+            auto-upload
+            @media-upload-finish="onImageUpload"
+        />
+        <sw-media-modal-v2
+            v-if="mediaModalIsOpen"
+            variant="full"
+            :allow-multi-select="false"
+            @media-modal-selection-change="onMediaSelection"
+            @modal-close="mediaModalIsOpen = false"
+        />
+        <sw-text-field
+            v-model:value="element.config.imageAlt.value"
+            :label="$t('vierpunkt-theme.cms.contentCard.imageAlt')"
+            @update:value="onElementUpdate"
+        />
+
+        <sw-colorpicker
+                v-model:value="element.config.backgroundColor.value"
+                :label="$t('vierpunkt-theme.cms.contentCard.backgroundColor')"
+                color-output="hex"
+                :alpha="false"
+                :z-index="1001"
+                @update:value="onElementUpdate"
+        />
+        <sw-text-field
+                v-model:value="element.config.headline.value"
+                :label="$t('vierpunkt-theme.cms.contentCard.headline')"
+                @update:value="onElementUpdate"
+        />
+        <sw-textarea-field
+                v-model:value="element.config.text.value"
+                :label="$t('vierpunkt-theme.cms.contentCard.text')"
+                @update:value="onElementUpdate"
+        />
+        <sw-text-field
+                v-model:value="element.config.buttonText.value"
+                :label="$t('vierpunkt-theme.cms.contentCard.buttonText')"
+                @update:value="onElementUpdate"
+        />
+        <sw-text-field
+                v-model:value="element.config.buttonUrl.value"
+                :label="$t('vierpunkt-theme.cms.contentCard.buttonUrl')"
+                placeholder="https://example.com, /contact, #details"
+                @update:value="onElementUpdate"
+        />
+    </div>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% block sw_cms_el_config_category_background_card %}
+    <sw-entity-single-select
+        :value="element.config.category.value"
+        entity="category"
+        :criteria="categoryCriteria"
+        :label="$t('vierpunkt-theme.cms.categoryBackgroundCard.category')"
+        :placeholder="$t('vierpunkt-theme.cms.categoryBackgroundCard.placeholder')"
+        show-clearable-button
+        @update:value="onCategoryChange"
+    />
+{% endblock %}

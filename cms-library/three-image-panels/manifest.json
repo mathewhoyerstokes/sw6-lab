@@ -1,0 +1,40 @@
+{
+  "block": "three-image-panels",
+  "shopwareVersion": "6.6",
+  "category": "Text & images",
+  "customElements": [
+    "image-panel"
+  ],
+  "resolverClasses": [
+    "BackgroundCardCmsElementResolver",
+    "ImagePanelCmsElementResolver"
+  ],
+  "administrationImport": "import './module/sw-cms/library/three-image-panels';",
+  "scssImport": "@import \"cms-library/three-image-panels\";",
+  "serviceImport": "cms-library/three-image-panels.xml",
+  "files": [
+    "src/Cms/BackgroundCardCmsElementResolver.php",
+    "src/Cms/ImagePanelCmsElementResolver.php",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/three-image-panels/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/three-image-panels/component/sw-cms-block-three-image-panels.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/three-image-panels/component/sw-cms-block-three-image-panels.scss",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/three-image-panels/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/three-image-panels/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/three-image-panels/preview/sw-cms-preview-three-image-panels.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/three-image-panels/preview/sw-cms-preview-three-image-panels.scss",
+    "src/Resources/app/administration/src/module/sw-cms/elements/image-panel/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/image-panel/component/sw-cms-el-image-panel.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/image-panel/component/sw-cms-el-image-panel.scss",
+    "src/Resources/app/administration/src/module/sw-cms/elements/image-panel/config/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/image-panel/config/sw-cms-el-config-image-panel.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/image-panel/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/image-panel/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/library/three-image-panels/de-DE.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/three-image-panels/en-GB.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/three-image-panels/index.js",
+    "src/Resources/app/storefront/src/scss/cms-library/_three-image-panels.scss",
+    "src/Resources/config/cms-library/three-image-panels.xml",
+    "src/Resources/views/storefront/block/cms-block-three-image-panels.html.twig",
+    "src/Resources/views/storefront/element/cms-element-image-panel.html.twig"
+  ]
+}

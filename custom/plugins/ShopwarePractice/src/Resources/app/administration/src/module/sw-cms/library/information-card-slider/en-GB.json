@@ -3,7 +3,7 @@
     "cms": {
       "informationCardSlider": {
         "label": "Information card slider",
-        "help": "Edit up to six information cards. Each card has an image, H3 heading, paragraph and two optional links. Cards without an image are hidden. Save the layout to keep your changes.",
+        "help": "Edit up to six information cards with an optional image, H3 heading, paragraph and two optional links. Cards also work without images. Save the layout to keep your changes.",
         "slide": "Card",
         "image": "Card image",
         "headline": "Heading (H3)",

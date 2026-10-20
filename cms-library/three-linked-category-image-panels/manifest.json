@@ -1,0 +1,40 @@
+{
+  "block": "three-linked-category-image-panels",
+  "shopwareVersion": "6.6",
+  "category": "Text & images",
+  "customElements": [
+    "linked-category-image-panel"
+  ],
+  "resolverClasses": [
+    "CategoryCardCmsElementResolver",
+    "LinkedCategoryImagePanelCmsElementResolver"
+  ],
+  "administrationImport": "import './module/sw-cms/library/three-linked-category-image-panels';",
+  "scssImport": "@import \"cms-library/three-linked-category-image-panels\";",
+  "serviceImport": "cms-library/three-linked-category-image-panels.xml",
+  "files": [
+    "src/Cms/CategoryCardCmsElementResolver.php",
+    "src/Cms/LinkedCategoryImagePanelCmsElementResolver.php",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/three-linked-category-image-panels/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/three-linked-category-image-panels/component/sw-cms-block-three-linked-category-image-panels.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/three-linked-category-image-panels/component/sw-cms-block-three-linked-category-image-panels.scss",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/three-linked-category-image-panels/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/three-linked-category-image-panels/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/three-linked-category-image-panels/preview/sw-cms-preview-three-linked-category-image-panels.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/three-linked-category-image-panels/preview/sw-cms-preview-three-linked-category-image-panels.scss",
+    "src/Resources/app/administration/src/module/sw-cms/elements/linked-category-image-panel/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/linked-category-image-panel/component/sw-cms-el-linked-category-image-panel.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/linked-category-image-panel/component/sw-cms-el-linked-category-image-panel.scss",
+    "src/Resources/app/administration/src/module/sw-cms/elements/linked-category-image-panel/config/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/linked-category-image-panel/config/sw-cms-el-config-linked-category-image-panel.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/linked-category-image-panel/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/linked-category-image-panel/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/library/three-linked-category-image-panels/de-DE.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/three-linked-category-image-panels/en-GB.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/three-linked-category-image-panels/index.js",
+    "src/Resources/app/storefront/src/scss/cms-library/_three-linked-category-image-panels.scss",
+    "src/Resources/config/cms-library/three-linked-category-image-panels.xml",
+    "src/Resources/views/storefront/block/cms-block-three-linked-category-image-panels.html.twig",
+    "src/Resources/views/storefront/element/cms-element-linked-category-image-panel.html.twig"
+  ]
+}

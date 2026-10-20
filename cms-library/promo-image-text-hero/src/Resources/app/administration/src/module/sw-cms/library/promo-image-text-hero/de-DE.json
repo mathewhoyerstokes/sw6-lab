@@ -1,0 +1,20 @@
+{
+  "vierpunkt-theme": {
+    "cms": {
+      "blocks": {
+        "promoImageTextHero": {
+          "label": "Promo-Bild und Text"
+        }
+      },
+      "promoImageTextHero": {
+        "label": "Promo-Bild und Text",
+        "headline": "Überschrift",
+        "text": "Text",
+        "buttonText": "Button-Text",
+        "buttonUrl": "Button-Link",
+        "buttonTwoText": "Zweiter Button-Text",
+        "buttonTwoUrl": "Zweiter Button-Link"
+      }
+    }
+  }
+}

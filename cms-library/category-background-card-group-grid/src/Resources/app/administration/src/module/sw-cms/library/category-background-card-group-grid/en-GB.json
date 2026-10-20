@@ -1,0 +1,17 @@
+{
+  "vierpunkt-theme": {
+    "cms": {
+      "blocks": {
+        "categoryBackgroundCardGroupGrid": {
+          "label": "Category background card grid"
+        }
+      },
+      "categoryBackgroundCard": {
+        "label": "Category background card",
+        "category": "Category",
+        "placeholder": "Select a category",
+        "seeMore": "See more"
+      }
+    }
+  }
+}

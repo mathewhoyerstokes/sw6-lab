@@ -1,0 +1,34 @@
+{
+  "block": "four-cards",
+  "shopwareVersion": "6.6",
+  "category": "Text",
+  "customElements": [
+    "content-card"
+  ],
+  "resolverClasses": [],
+  "administrationImport": "import './module/sw-cms/library/four-cards';",
+  "scssImport": "@import \"cms-library/four-cards\";",
+  "serviceImport": null,
+  "files": [
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/four-cards/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/four-cards/component/sw-cms-block-four-cards.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/four-cards/component/sw-cms-block-four-cards.scss",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/four-cards/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/four-cards/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/four-cards/preview/sw-cms-preview-four-cards.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/four-cards/preview/sw-cms-preview-four-cards.scss",
+    "src/Resources/app/administration/src/module/sw-cms/elements/content-card/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/content-card/component/sw-cms-el-content-card.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/content-card/component/sw-cms-el-content-card.scss",
+    "src/Resources/app/administration/src/module/sw-cms/elements/content-card/config/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/content-card/config/sw-cms-el-config-content-card.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/content-card/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/content-card/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/library/four-cards/de-DE.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/four-cards/en-GB.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/four-cards/index.js",
+    "src/Resources/app/storefront/src/scss/cms-library/_four-cards.scss",
+    "src/Resources/views/storefront/block/cms-block-four-cards.html.twig",
+    "src/Resources/views/storefront/element/cms-element-content-card.html.twig"
+  ]
+}

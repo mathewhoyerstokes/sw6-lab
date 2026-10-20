@@ -1,0 +1,7 @@
+{% block sw_cms_block_promo_switcher_text_image_hero %}
+    <div class="sw-cms-block-promo-switcher-text-image-hero">
+        <template v-for="slotName in orderedSlots" :key="slotName">
+            <slot :name="slotName"></slot>
+        </template>
+    </div>
+{% endblock %}

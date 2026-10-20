@@ -1,0 +1,38 @@
+{
+  "block": "category-card-group-grid",
+  "shopwareVersion": "6.6",
+  "category": "Images",
+  "customElements": [
+    "category-card"
+  ],
+  "resolverClasses": [
+    "CategoryCardCmsElementResolver"
+  ],
+  "administrationImport": "import './module/sw-cms/library/category-card-group-grid';",
+  "scssImport": "@import \"cms-library/category-card-group-grid\";",
+  "serviceImport": "cms-library/category-card-group-grid.xml",
+  "files": [
+    "src/Cms/CategoryCardCmsElementResolver.php",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/image/category-card-group-grid/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/image/category-card-group-grid/component/sw-cms-block-category-card-group-grid.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/image/category-card-group-grid/component/sw-cms-block-category-card-group-grid.scss",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/image/category-card-group-grid/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/image/category-card-group-grid/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/image/category-card-group-grid/preview/sw-cms-preview-category-card-group-grid.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/image/category-card-group-grid/preview/sw-cms-preview-category-card-group-grid.scss",
+    "src/Resources/app/administration/src/module/sw-cms/elements/category-card/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/category-card/component/sw-cms-el-category-card.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/category-card/component/sw-cms-el-category-card.scss",
+    "src/Resources/app/administration/src/module/sw-cms/elements/category-card/config/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/category-card/config/sw-cms-el-config-category-card.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/category-card/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/category-card/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/library/category-card-group-grid/de-DE.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/category-card-group-grid/en-GB.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/category-card-group-grid/index.js",
+    "src/Resources/app/storefront/src/scss/cms-library/_category-card-group-grid.scss",
+    "src/Resources/config/cms-library/category-card-group-grid.xml",
+    "src/Resources/views/storefront/block/cms-block-category-card-group-grid.html.twig",
+    "src/Resources/views/storefront/element/cms-element-category-card.html.twig"
+  ]
+}

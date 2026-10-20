@@ -1,0 +1,9 @@
+{% block cms_block_hero_card_slider %}
+    {# One CMS slot contains the ordered slide list. Configure it using the element cog in Shopping Experiences. #}
+    {% set element = block.slots.getSlot('content') %}
+    {% if element %}
+        <div class="col-12" data-cms-element-id="{{ element.id }}">
+            {% sw_include '@Storefront/storefront/element/cms-element-hero-card-slider.html.twig' %}
+        </div>
+    {% endif %}
+{% endblock %}

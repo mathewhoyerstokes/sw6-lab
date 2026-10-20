@@ -1,0 +1,11 @@
+{% block sw_cms_preview_masonry_grid %}
+    <div class="sw-cms-preview-masonry-grid">
+        <h2>Grid title</h2>
+        <div class="sw-cms-preview-masonry-grid__grid">
+            <div v-for="column in 3" :key="column" class="sw-cms-preview-masonry-grid__column">
+                <img :src="assetFilter('/administration/administration/static/img/cms/preview_camera_small.webp')" alt="">
+                <img :src="assetFilter('/administration/administration/static/img/cms/preview_plant_small.webp')" alt="">
+            </div>
+        </div>
+    </div>
+{% endblock %}

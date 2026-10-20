@@ -1,0 +1,9 @@
+{% block sw_cms_el_background_card %}
+    <div class="sw-cms-el-image-panel" :style="cardStyle">
+        <h3>{{ element.config.headline.value || $t('vierpunkt-theme.cms.contentCard.headline') }}</h3>
+        <p>{{ element.config.text.value || $t('vierpunkt-theme.cms.contentCard.text') }}</p>
+        <span class="sw-cms-el-image-panel__button">
+            {{ element.config.buttonText.value || $t('vierpunkt-theme.cms.contentCard.buttonText') }}
+        </span>
+    </div>
+{% endblock %}

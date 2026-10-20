@@ -1,0 +1,27 @@
+{
+  "block": "hero-newsletter",
+  "shopwareVersion": "6.6",
+  "category": "Forms",
+  "customElements": [],
+  "resolverClasses": [],
+  "administrationImport": "import './module/sw-cms/library/hero-newsletter';",
+  "scssImport": "@import \"cms-library/hero-newsletter\";",
+  "serviceImport": null,
+  "files": [
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/hero-newsletter/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/hero-newsletter/component/sw-cms-block-hero-newsletter.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/hero-newsletter/component/sw-cms-block-hero-newsletter.scss",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/hero-newsletter/component/sw-cms-hero-newsletter.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/hero-newsletter/component/sw-cms-hero-newsletter.scss",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/hero-newsletter/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/hero-newsletter/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/hero-newsletter/preview/sw-cms-preview-hero-newsletter.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/hero-newsletter/preview/sw-cms-preview-hero-newsletter.scss",
+    "src/Resources/app/administration/src/module/sw-cms/library/hero-newsletter/de-DE.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/hero-newsletter/en-GB.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/hero-newsletter/index.js",
+    "src/Resources/app/storefront/src/scss/cms-library/_hero-newsletter.scss",
+    "src/Resources/views/storefront/block/cms-block-hero-newsletter.html.twig",
+    "src/Resources/views/storefront/element/hero-newsletter-signup.html.twig"
+  ]
+}

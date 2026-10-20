@@ -3,6 +3,14 @@ ifndef APP_ENV
 endif
 
 .DEFAULT_GOAL := help
+.PHONY: export-cms-library check-cms-library
+export-cms-library: ## Refresh copyable CMS packages from the theme source
+	python3 scripts/export-cms-library.py
+
+check-cms-library: ## Verify CMS exports and their dependencies
+	python3 scripts/export-cms-library.py --check
+	python3 -m unittest discover -s scripts/tests
+
 .PHONY: help
 help:
 	@awk 'BEGIN {FS = ":.*?## "}; /^[a-zA-Z-]+:.*?## .*$$/ {printf "[32m%-15s[0m %s\n", $$1, $$2}' Makefile | sort

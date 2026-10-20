@@ -1,0 +1,8 @@
+{% block cms_block_split_text_buttons %}
+    {% set element = block.slots.getSlot('content') %}
+    {% if element %}
+        <div class="col-12" data-cms-element-id="{{ element.id }}">
+            {% sw_include '@Storefront/storefront/element/cms-element-split-text-buttons.html.twig' %}
+        </div>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,41 @@
+{
+  "block": "hero-card-slider",
+  "shopwareVersion": "6.6",
+  "category": "Text & images",
+  "customElements": [
+    "hero-card-slider"
+  ],
+  "resolverClasses": [
+    "HeroCardSliderCmsElementResolver"
+  ],
+  "administrationImport": "import './module/sw-cms/library/hero-card-slider';",
+  "scssImport": "@import \"cms-library/hero-card-slider\";",
+  "serviceImport": "cms-library/hero-card-slider.xml",
+  "files": [
+    "src/Cms/HeroCardSliderCmsElementResolver.php",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/hero-card-slider/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/hero-card-slider/component/sw-cms-block-hero-card-slider.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/hero-card-slider/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/hero-card-slider/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text-image/hero-card-slider/preview/sw-cms-preview-hero-card-slider.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/hero-card-slider/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/hero-card-slider/component/sw-cms-el-hero-card-slider.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/hero-card-slider/component/sw-cms-el-hero-card-slider.scss",
+    "src/Resources/app/administration/src/module/sw-cms/elements/hero-card-slider/config/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/hero-card-slider/config/sw-cms-el-config-hero-card-slider.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/hero-card-slider/config/sw-cms-el-config-hero-card-slider.scss",
+    "src/Resources/app/administration/src/module/sw-cms/elements/hero-card-slider/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/hero-card-slider/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/hero-card-slider/preview/sw-cms-el-preview-hero-card-slider.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/hero-card-slider/preview/sw-cms-el-preview-hero-card-slider.scss",
+    "src/Resources/app/administration/src/module/sw-cms/library/hero-card-slider/de-DE.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/hero-card-slider/en-GB.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/hero-card-slider/index.js",
+    "src/Resources/app/storefront/src/scss/cms-library/_hero-card-slider.scss",
+    "src/Resources/config/cms-library/hero-card-slider.xml",
+    "src/Resources/snippet/hero-card-slider.storefront.de-DE.json",
+    "src/Resources/snippet/hero-card-slider.storefront.en-GB.json",
+    "src/Resources/views/storefront/block/cms-block-hero-card-slider.html.twig",
+    "src/Resources/views/storefront/element/cms-element-hero-card-slider.html.twig"
+  ]
+}

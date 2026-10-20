@@ -1,0 +1,22 @@
+{
+  "vierpunkt-theme": {
+    "cms": {
+      "blocks": {
+        "promoSwitcherTextImageHero": {
+          "label": "Promo switcher text and image hero"
+        }
+      },
+      "promoSwitcherTextImageHero": {
+        "label": "Promo switcher text and image hero",
+        "headline": "Headline",
+        "text": "Text",
+        "buttonText": "Button text",
+        "buttonUrl": "Button link",
+        "buttonTwoText": "Second button text",
+        "buttonTwoUrl": "Second button link",
+        "imageOnRight": "Image on right",
+        "imageOnRightHelp": "Switch on for text on the left and image on the right. Mobile stacking follows this order."
+      }
+    }
+  }
+}

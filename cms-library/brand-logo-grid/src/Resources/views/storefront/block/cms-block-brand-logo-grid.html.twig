@@ -1,0 +1,39 @@
+{% block block_brand_logo_grid %}
+    <div class="col-12 cms-block-brand-logo-grid">
+        <div class="row justify-content-center align-items-center row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
+            {% for index in 1..4 %}
+                {% set image = block.slots.getSlot('image-' ~ index) %}
+                {% set title = block.slots.getSlot('title-' ~ index) %}
+                {% set mediaUrl = image.data.media.url ?? '' %}
+                {% set headline = title.translated.config.headline.value ?? '' %}
+
+                {% if mediaUrl or headline %}
+                    <div class="col d-flex justify-content-center align-items-center">
+                        <div class="cms-brand-logo-grid text-center">
+                            <div class="cms-brand-logo-grid-card">
+                                <div class="cms-brand-logo-grid-card-head">
+                                    {% if mediaUrl %}
+                                        <div class="cms-brand-logo-grid__logo" data-cms-element-id="{{ image.id }}">
+                                            {% sw_include '@Storefront/storefront/element/cms-element-' ~ image.type ~ '.html.twig' with {
+                                                element: image
+                                            } %}
+                                        </div>
+                                    {% endif %}
+                                </div>
+                                <div class="cms-brand-logo-grid-card-body">
+                                    {% if headline %}
+                                        <div class="cms-brand-logo-grid__title mt-4" data-cms-element-id="{{ title.id }}">
+                                            {% sw_include '@Storefront/storefront/element/cms-element-' ~ title.type ~ '.html.twig' with {
+                                                element: title
+                                            } %}
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

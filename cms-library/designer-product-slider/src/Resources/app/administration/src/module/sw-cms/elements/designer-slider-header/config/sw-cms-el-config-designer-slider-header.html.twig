@@ -1,0 +1,8 @@
+<div class="sw-cms-el-config-designer-slider-header">
+    <sw-text-field :value="element.config.headline.value"
+        :label="$t('vierpunkt-theme.cms.designerSliderHeader.headline')"
+        @update:value="updateField('headline', $event)" />
+    <sw-text-field :value="element.config.subheadline.value"
+        :label="$t('vierpunkt-theme.cms.designerSliderHeader.subheadline')"
+        @update:value="updateField('subheadline', $event)" />
+</div>

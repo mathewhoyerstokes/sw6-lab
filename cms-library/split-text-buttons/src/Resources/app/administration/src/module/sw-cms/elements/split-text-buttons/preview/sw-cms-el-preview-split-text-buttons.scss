@@ -1,0 +1,32 @@
+.sw-cms-el-preview-split-text-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    padding: 24px 16px;
+    background: #2d4266;
+    color: #fff;
+    strong {
+        display: block;
+        margin-bottom: 12px;
+    }
+    p {
+        height: 30px;
+        margin-bottom: 12px;
+        background: rgba(255,255,255,.3);
+    }
+    > div > span {
+        display: block;
+        height: 10px;
+        width: 80%;
+        background: rgba(255,255,255,.5);
+    }
+    &__buttons {
+        display: flex;
+        gap: 8px;
+        span {
+            width: 45%;
+            height: 18px;
+            background: #fff;
+        }
+    }
+}

@@ -1,0 +1,106 @@
+// Adapt this block to the new design here. Shopware supplies Bootstrap utilities and mixins.
+.cms-block-three-linked-category-image-panels {
+    .cms-block-container-row {
+        --bs-gutter-x: 0;
+        --bs-gutter-y: 0;
+    }
+    .three-image-panels-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .three-image-panels-column {
+        display: flex;
+        min-width: 0;
+    }
+    @media (min-width: 992px) {
+        .three-image-panels-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+    }
+}
+.cms-block-three-linked-category-image-panels .cms-element-image-panel {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 420px;
+    padding: 32px;
+    border-radius: 0;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    overflow-wrap: anywhere;
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background: rgba(0, 0, 0, .3);
+    }
+    h3 {
+        color: inherit;
+        margin: 0 0 16px;
+    }
+    p {
+        white-space: pre-line;
+        margin: 0 0 24px;
+    }
+    .btn {
+        align-self: flex-start;
+        margin-top: auto;
+        white-space: normal;
+    }
+}
+.cms-block-three-linked-category-image-panels a.cms-element-linked-category-image-panel {
+    text-decoration: none;
+    color: #fff;
+    background-color: #343a40;
+    overflow: hidden;
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: -2;
+        background-image: inherit;
+        background-size: cover;
+        background-position: center;
+        transform: scale(1);
+        transition: transform .45s ease;
+        pointer-events: none;
+    }
+    &::before {
+        transition: background-color .3s ease;
+        pointer-events: none;
+    }
+    &:hover {
+        color: #fff;
+    }
+    @media (hover: hover) {
+        &:hover::after {
+            transform: scale(1.05);
+        }
+        &:hover::before {
+            background-color: rgba(0, 0, 0, .5);
+        }
+    }
+    &:focus-visible {
+        outline: 3px solid #fff;
+        outline-offset: -6px;
+    }
+    &:focus-visible::after {
+        transform: scale(1.05);
+    }
+    &:focus-visible::before {
+        background-color: rgba(0, 0, 0, .5);
+    }
+    @media (prefers-reduced-motion: reduce) {
+        &::after, &::before {
+            transition: none;
+        }
+        &:hover::after, &:focus-visible::after {
+            transform: none;
+        }
+    }
+}

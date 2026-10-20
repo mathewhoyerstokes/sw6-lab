@@ -1,0 +1,20 @@
+{
+  "vierpunkt-theme": {
+    "cms": {
+      "splitTextButtons": {
+        "label": "Split text and buttons",
+        "backgroundHelp": "Background color applies to this component. Clear it to use the section background, configured in the section settings.",
+        "backgroundColor": "Background color",
+        "textColor": "Text color",
+        "headlineOnRight": "Show headline on the right",
+        "headline": "Headline (H2)",
+        "subheadline": "Subheading (optional)",
+        "text": "Paragraph text",
+        "buttonText": "First button text",
+        "buttonUrl": "First button URL",
+        "buttonTwoText": "Second button text",
+        "buttonTwoUrl": "Second button URL"
+      }
+    }
+  }
+}

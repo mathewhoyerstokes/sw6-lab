@@ -1,0 +1,22 @@
+{
+  "vierpunkt-theme": {
+    "cms": {
+      "blocks": {
+        "threeCardsWithBackgroundImage": {
+          "label": "3 Karten mit Hintergrundbild"
+        }
+      },
+      "contentCard": {
+        "backgroundColor": "Hintergrundfarbe",
+        "headline": "Überschrift",
+        "text": "Text",
+        "buttonText": "Button-Beschriftung",
+        "buttonUrl": "Button-Link"
+      },
+      "backgroundCard": {
+        "label": "Karte mit Hintergrundbild",
+        "backgroundMedia": "Hintergrundbild"
+      }
+    }
+  }
+}

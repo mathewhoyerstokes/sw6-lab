@@ -1,0 +1,22 @@
+{
+  "vierpunkt-theme": {
+    "cms": {
+      "informationCardSlider": {
+        "label": "Information card slider",
+        "help": "Edit up to six information cards with an optional image, H3 heading, paragraph and two optional links. Cards also work without images. Save the layout to keep your changes.",
+        "slide": "Card",
+        "image": "Card image",
+        "headline": "Heading (H3)",
+        "buttonText": "Primary button text",
+        "buttonUrl": "Primary button URL",
+        "secondaryButtonText": "Secondary button text",
+        "secondaryButtonUrl": "Secondary button URL",
+        "up": "Move up",
+        "down": "Move down",
+        "remove": "Remove slide",
+        "add": "Add card",
+        "text": "Paragraph text"
+      }
+    }
+  }
+}

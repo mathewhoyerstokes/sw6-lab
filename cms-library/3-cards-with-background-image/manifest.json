@@ -1,0 +1,38 @@
+{
+  "block": "3-cards-with-background-image",
+  "shopwareVersion": "6.6",
+  "category": "Text",
+  "customElements": [
+    "background-card"
+  ],
+  "resolverClasses": [
+    "BackgroundCardCmsElementResolver"
+  ],
+  "administrationImport": "import './module/sw-cms/library/3-cards-with-background-image';",
+  "scssImport": "@import \"cms-library/3-cards-with-background-image\";",
+  "serviceImport": "cms-library/3-cards-with-background-image.xml",
+  "files": [
+    "src/Cms/BackgroundCardCmsElementResolver.php",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/3-cards-with-background-image/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/3-cards-with-background-image/component/sw-cms-block-3-cards-with-background-image.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/3-cards-with-background-image/component/sw-cms-block-3-cards-with-background-image.scss",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/3-cards-with-background-image/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/3-cards-with-background-image/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/3-cards-with-background-image/preview/sw-cms-preview-3-cards-with-background-image.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/blocks/text/3-cards-with-background-image/preview/sw-cms-preview-3-cards-with-background-image.scss",
+    "src/Resources/app/administration/src/module/sw-cms/elements/background-card/component/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/background-card/component/sw-cms-el-background-card.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/background-card/component/sw-cms-el-background-card.scss",
+    "src/Resources/app/administration/src/module/sw-cms/elements/background-card/config/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/background-card/config/sw-cms-el-config-background-card.html.twig",
+    "src/Resources/app/administration/src/module/sw-cms/elements/background-card/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/elements/background-card/preview/index.js",
+    "src/Resources/app/administration/src/module/sw-cms/library/3-cards-with-background-image/de-DE.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/3-cards-with-background-image/en-GB.json",
+    "src/Resources/app/administration/src/module/sw-cms/library/3-cards-with-background-image/index.js",
+    "src/Resources/app/storefront/src/scss/cms-library/_3-cards-with-background-image.scss",
+    "src/Resources/config/cms-library/3-cards-with-background-image.xml",
+    "src/Resources/views/storefront/block/cms-block-3-cards-with-background-image.html.twig",
+    "src/Resources/views/storefront/element/cms-element-background-card.html.twig"
+  ]
+}

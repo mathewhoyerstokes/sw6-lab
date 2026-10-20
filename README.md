@@ -4,6 +4,12 @@ Shopware **6.6.10.29** in Docker, with a custom storefront theme called Shopware
 
 This project stays on Shopware 6.6 so it matches shops that have not moved to 6.7.
 
+## Copy components into another project
+
+Open the [copyable CMS library](cms-library/README.md), choose a block, and follow its installation README. Each of the 20 packages contains a mergeable `src/` folder with its editor, preview, translations, styles, templates and custom dependencies. PHP packages include namespace and service-import instructions.
+
+The working theme is the source of truth. After editing it, refresh the copyable packages with `make export-cms-library`, then validate them with `make check-cms-library`. Python 3 is required for these commands; Docker is not.
+
 ## Requirements
 
 - Docker
@@ -131,8 +137,8 @@ The library blocks are installed in Shopware Practice and adapted for Shopware 6
 | `hero-newsletter` | Forms |
 | `icon-accordion` | Text |
 | `information-card-slider` | Text & images |
-| `media` | Images |
-| `media` | Images |
+| `brand-logo-grid` | Images |
+| `masonry-grid` | Images |
 | `promo-image-text-hero` | Text & images |
 | `promo-switcher-text-image-hero` | Text & images |
 | `promo-text-image-hero` | Text & images |

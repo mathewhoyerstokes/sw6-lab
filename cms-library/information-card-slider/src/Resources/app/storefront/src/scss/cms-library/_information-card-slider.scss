@@ -1,0 +1,78 @@
+// Adapt this block to the new design here. Shopware supplies Bootstrap utilities and mixins.
+.cms-block-information-card-slider .cms-element-information-card-slider {
+    &:not(.js-slider-initialized) [data-base-slider-container] {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+        @include media-breakpoint-up(md) {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        @include media-breakpoint-up(lg) {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+    }
+    .tns-slider {
+        display: flex;
+    }
+    .information-card-slider-slide {
+        min-width: 0;
+        flex-shrink: 0;
+    }
+    .information-card-slider-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        border: 1px solid $border-color;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .information-card-slider-image {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+    }
+    .information-card-slider-content {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        padding: 24px;
+        overflow-wrap: anywhere;
+    }
+    h3 {
+        margin-bottom: 16px;
+    }
+    p {
+        margin-bottom: 24px;
+        white-space: pre-line;
+    }
+    .information-card-slider-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: auto;
+    }
+    .information-card-slider-controls {
+        display: flex;
+        justify-content: flex-end;
+        gap: 12px;
+        margin-top: 24px;
+    }
+    .tns-nav {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 16px;
+    }
+    .tns-nav button {
+        width: 10px;
+        height: 10px;
+        padding: 0;
+        border: 1px solid currentColor;
+        border-radius: 50%;
+        background: transparent;
+    }
+    .tns-nav .tns-nav-active {
+        background: currentColor;
+    }
+}

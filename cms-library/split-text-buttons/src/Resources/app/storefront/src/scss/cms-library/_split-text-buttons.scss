@@ -1,0 +1,42 @@
+// Adapt this block to the new design here. Shopware supplies Bootstrap utilities and mixins.
+.cms-block-split-text-buttons .cms-block-container-row {
+    --bs-gutter-x: 0;
+}
+.cms-block-split-text-buttons .cms-element-split-text-buttons {
+    padding: clamp(48px, 6vw, 112px) 12px;
+    h2, p {
+        color: inherit;
+        overflow-wrap: anywhere;
+        white-space: pre-line;
+    }
+    .split-text-buttons-headline {
+        font-size: clamp(2rem, 3.5vw, 4rem);
+        line-height: 1.2;
+        margin: 0 0 20px;
+        padding-bottom: 0;
+        &::after {
+            display: none;
+        }
+    }
+    .split-text-buttons-subheadline {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin: 0;
+    }
+    .split-text-buttons-text {
+        font-size: clamp(1.125rem, 1.5vw, 1.5rem);
+        line-height: 1.6;
+        margin: 0;
+    }
+    .split-text-buttons-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        &:has(.btn) {
+            margin-top: 32px;
+        }
+        .btn {
+            white-space: normal;
+        }
+    }
+}

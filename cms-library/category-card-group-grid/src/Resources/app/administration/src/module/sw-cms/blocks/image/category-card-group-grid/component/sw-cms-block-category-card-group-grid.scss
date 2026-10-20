@@ -1,0 +1,6 @@
+.sw-cms-block-category-card-group-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  .sw-cms-slot { min-width: 0; height: auto; }
+}
